@@ -1,0 +1,29 @@
+version: '3.8'  # Docker Compose版本号，根据你的实际需求可能会有所不同
+
+services:
+  redis:
+    image: redis:latest  # 使用最新的Redis镜像
+    container_name: redis-server  # 指定容器名称
+    ports:
+      - "6379:6379"  # 将Redis的6379端口映射到宿主机的6379端口
+    networks:
+      - openapi-platform-network # 使用定义的网络
+
+  mysql:
+    image: mysql:latest  # 使用最新的MySQL镜像，确保版本在8以上
+    container_name: mysql-server  # 指定容器名称
+    ports:
+      - "3306:3306" # 将MySQL的3306端口映射到宿主机的3306端口
+    environment:
+      MYSQL_ROOT_PASSWORD: 123123  # 设置MySQL的root用户密码
+      MYSQL_DATABASE: openapi-platform  # 设置一个默认数据库名称
+      MYSQL_USER: pgthinker  # 设置一个普通用户名称
+      MYSQL_PASSWORD: 123123  # 设置该普通用户的密码
+    volumes:
+      - /usr/local/docker/mysql/data:/var/lib/mysql
+    networks:
+      - openapi-platform-network # 使用定义的网络
+
+networks:
+  openapi-platform-network:
+    driver: bridge  # 使用默认的bridge网络驱动器
