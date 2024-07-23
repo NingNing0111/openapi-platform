@@ -8,6 +8,7 @@ import type { MenuInfo } from 'rc-menu/lib/interface';
 import React, { useCallback } from 'react';
 import { flushSync } from 'react-dom';
 import HeaderDropdown from '../HeaderDropdown';
+import { userLogoutUsingPost } from '@/services/swagger/userController';
 
 export type GlobalHeaderRightProps = {
   menu?: boolean;
@@ -69,7 +70,7 @@ export const AvatarDropdown: React.FC<GlobalHeaderRightProps> = ({ menu, childre
         flushSync(() => {
           setInitialState((s) => ({ ...s, currentUser: undefined }));
         });
-        loginOut();
+        userLogoutUsingPost();
         return;
       }
       history.push(`/account/${key}`);
