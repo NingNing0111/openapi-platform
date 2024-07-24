@@ -15,6 +15,7 @@ import com.pgthinker.backend.model.enums.UserRoleEnum;
 import com.pgthinker.backend.model.vo.LoginUserVO;
 import com.pgthinker.backend.model.vo.UserVO;
 import com.pgthinker.backend.service.UserService;
+import com.pgthinker.backend.utils.GenKeyUtils;
 import com.pgthinker.backend.utils.SqlUtils;
 import java.util.ArrayList;
 import java.util.List;
@@ -71,6 +72,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             User user = new User();
             user.setUserAccount(userAccount);
             user.setUserPassword(encryptPassword);
+            user.setAccessKey(GenKeyUtils.genKey(16));
+            user.setSecretKey(GenKeyUtils.genKey(32));
+            user.setEmail("example@api.com");
             boolean saveResult = this.save(user);
             if (!saveResult) {
                 throw new BusinessException(ErrorCode.SYSTEM_ERROR, "注册失败，数据库错误");

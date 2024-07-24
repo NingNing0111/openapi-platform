@@ -29,6 +29,9 @@ public class User implements Serializable {
      * 用户账号
      */
     private String userAccount;
+    private String email;
+    private String accessKey;;
+    private String secretKey;
 
     /**
      * 用户密码
