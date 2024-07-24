@@ -19,8 +19,9 @@ public class TestController {
     }
 
     @PostMapping("/ping-post-1")
-    public String pingPost(@RequestParam String params) {
-        return "pong! " + params;
+    public String pingPost(@RequestParam String param) {
+        System.out.println(param);
+        return "pong! " + param;
     }
 
     @PostMapping("/ping-post-2")
