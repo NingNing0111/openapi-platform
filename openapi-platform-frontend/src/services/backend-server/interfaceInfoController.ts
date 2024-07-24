@@ -32,6 +32,21 @@ export async function deleteInterfaceInfoUsingPost(
   });
 }
 
+/** deleteInterfaceInfos POST /api/interfaceInfo/deletes */
+export async function deleteInterfaceInfosUsingPost(
+  body: API.InterfaceDeleteRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/interfaceInfo/deletes', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  });
+}
+
 /** editInterfaceInfo POST /api/interfaceInfo/edit */
 export async function editInterfaceInfoUsingPost(
   body: API.InterfaceInfoEditRequest,

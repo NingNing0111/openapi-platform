@@ -95,6 +95,10 @@ declare namespace API {
     id?: number;
   };
 
+  type InterfaceDeleteRequest = {
+    ids?: number[];
+  };
+
   type InterfaceInfo = {
     createTime?: string;
     description?: string;
@@ -147,7 +151,6 @@ declare namespace API {
   };
 
   type InterfaceInfoUpdateRequest = {
-    createTime?: string;
     description?: string;
     id?: number;
     method?: string;
@@ -156,7 +159,6 @@ declare namespace API {
     responseHeader?: string;
     status?: number;
     url?: string;
-    userId?: number;
   };
 
   type LoginUserVO = {

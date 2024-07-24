@@ -11,13 +11,9 @@ import com.pgthinker.backend.constant.CommonConstant;
 import com.pgthinker.backend.constant.UserConstant;
 import com.pgthinker.backend.exception.BusinessException;
 import com.pgthinker.backend.exception.ThrowUtils;
-import com.pgthinker.backend.model.dto.interfaceInfo.InterfaceInfoAddRequest;
-import com.pgthinker.backend.model.dto.interfaceInfo.InterfaceInfoEditRequest;
-import com.pgthinker.backend.model.dto.interfaceInfo.InterfaceInfoQueryRequest;
-import com.pgthinker.backend.model.dto.interfaceInfo.InterfaceInfoUpdateRequest;
+import com.pgthinker.backend.model.dto.interfaceInfo.*;
 import com.pgthinker.backend.model.entity.InterfaceInfo;
 import com.pgthinker.backend.model.entity.User;
-import com.pgthinker.backend.model.vo.InterfaceInfoVO;
 import com.pgthinker.backend.service.InterfaceInfoService;
 import com.pgthinker.backend.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -27,6 +23,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 @RestController
@@ -78,7 +77,6 @@ public class InterfaceInfoController {
         if (deleteRequest == null || deleteRequest.getId() <= 0) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
-        User user = userService.getLoginUser(request);
         long id = deleteRequest.getId();
         // 判断是否存在
         InterfaceInfo oldInterfaceInfo = interfaceInfoService.getById(id);
@@ -86,6 +84,28 @@ public class InterfaceInfoController {
 
         boolean b = interfaceInfoService.removeById(id);
         return ResultUtils.success(b);
+    }
+
+    /**
+     * 一次性删除多个
+     */
+    @PostMapping("/deletes")
+    @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
+    public BaseResponse<Boolean> deleteInterfaceInfos(@RequestBody InterfaceDeleteRequest deleteRequest, HttpServletRequest httpServletRequest){
+        if(deleteRequest == null || deleteRequest.getIds().length == 0 || Arrays.stream(deleteRequest.getIds()).anyMatch(id->id<0)){
+            throw new BusinessException(ErrorCode.PARAMS_ERROR);
+        }
+        Long[] ids = deleteRequest.getIds();
+        // 判断是否存在
+        List existingIds = Arrays.asList(ids).stream()
+                .filter(id -> interfaceInfoService.getById(id) != null)
+                .collect(Collectors.toList());
+        if(existingIds.size() != ids.length){
+            throw  new BusinessException(ErrorCode.NOT_FOUND_ERROR);
+        }
+        // 删除
+        boolean result = interfaceInfoService.removeBatchByIds(existingIds);
+        return ResultUtils.success(result);
     }
 
     /**
@@ -141,20 +161,26 @@ public class InterfaceInfoController {
         ThrowUtils.throwIf(interfaceInfoQueryRequest == null, ErrorCode.PARAMS_ERROR);
         long current = interfaceInfoQueryRequest.getCurrent();
         long size = interfaceInfoQueryRequest.getPageSize();
-
         InterfaceInfo interfaceInfoQuery = new InterfaceInfo();
         BeanUtils.copyProperties(interfaceInfoQueryRequest, interfaceInfoQuery);
         String sortField = interfaceInfoQueryRequest.getSortField();
         String sortOrder = interfaceInfoQueryRequest.getSortOrder();
         String description = interfaceInfoQuery.getDescription();
-        // description 需支持模糊搜索
+        String name = interfaceInfoQuery.getName();
+        String url = interfaceInfoQuery.getUrl();
+        // description、name、url 需支持模糊搜索
         interfaceInfoQuery.setDescription(null);
+        interfaceInfoQuery.setName(null);
+        interfaceInfoQuery.setUrl(null);
         // 限制爬虫
         if (size > 50) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
         QueryWrapper<InterfaceInfo> queryWrapper = new QueryWrapper<>(interfaceInfoQuery);
         queryWrapper.like(StringUtils.isNotBlank(description), "description", description);
+        queryWrapper.like(StringUtils.isNotBlank(name),"name",name);
+        queryWrapper.like(StringUtils.isNotBlank(url),"url",url);
+
         queryWrapper.orderBy(StringUtils.isNotBlank(sortField),
                 sortOrder.equals(CommonConstant.SORT_ORDER_ASC), sortField);
         Page<InterfaceInfo> interfaceInfoPage = interfaceInfoService.page(new Page<>(current, size), queryWrapper);
