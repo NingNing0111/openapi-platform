@@ -3,7 +3,7 @@ package com.pgthinker.backend.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pgthinker.backend.annotation.AuthCheck;
 import com.pgthinker.backend.common.BaseResponse;
-import com.pgthinker.backend.common.DeleteRequest;
+import com.pgthinker.backend.common.UpdateRequest;
 import com.pgthinker.backend.common.ErrorCode;
 import com.pgthinker.backend.common.ResultUtils;
 import com.pgthinker.backend.constant.UserConstant;
@@ -161,7 +161,7 @@ public class UserController {
      */
     @PostMapping("/delete")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
-    public BaseResponse<Boolean> deleteUser(@RequestBody DeleteRequest deleteRequest, HttpServletRequest request) {
+    public BaseResponse<Boolean> deleteUser(@RequestBody UpdateRequest deleteRequest, HttpServletRequest request) {
         if (deleteRequest == null || deleteRequest.getId() <= 0) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }

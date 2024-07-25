@@ -14,7 +14,7 @@ import lombok.Data;
  * @Description: 删除请求
  */
 @Data
-public class DeleteRequest implements Serializable {
+public class UpdateRequest implements Serializable {
 
     /**
      * id

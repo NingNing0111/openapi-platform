@@ -4,7 +4,7 @@ import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pgthinker.backend.annotation.AuthCheck;
 import com.pgthinker.backend.common.BaseResponse;
-import com.pgthinker.backend.common.DeleteRequest;
+import com.pgthinker.backend.common.UpdateRequest;
 import com.pgthinker.backend.common.ErrorCode;
 import com.pgthinker.backend.common.ResultUtils;
 import com.pgthinker.backend.constant.UserConstant;
@@ -41,7 +41,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class PostController {
 
-    @Resource
+//    @Resource
     private PostService postService;
 
     @Resource
@@ -86,7 +86,7 @@ public class PostController {
      * @return
      */
     @PostMapping("/delete")
-    public BaseResponse<Boolean> deletePost(@RequestBody DeleteRequest deleteRequest, HttpServletRequest request) {
+    public BaseResponse<Boolean> deletePost(@RequestBody UpdateRequest deleteRequest, HttpServletRequest request) {
         if (deleteRequest == null || deleteRequest.getId() <= 0) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }

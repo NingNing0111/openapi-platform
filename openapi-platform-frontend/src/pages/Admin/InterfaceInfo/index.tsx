@@ -3,6 +3,8 @@ import {
   deleteInterfaceInfosUsingPost,
   deleteInterfaceInfoUsingPost,
   listInterfaceInfoByPageUsingPost,
+  offlineInterfaceUsingPost,
+  onlineInterfaceUsingPost,
   updateInterfaceInfoUsingPost,
 } from '@/services/backend-server/interfaceInfoController';
 import { ExclamationCircleFilled, PlusOutlined } from '@ant-design/icons';
@@ -51,8 +53,8 @@ const TableList: React.FC = () => {
         ...fields,
       });
       hide();
-
       message.success('操作成功');
+      actionRef.current?.reload();
       return true;
     } catch (error: any) {
       hide();
@@ -69,9 +71,10 @@ const TableList: React.FC = () => {
     };
     const hide = message.loading('删除中');
     try {
-      hide();
       await deleteInterfaceInfosUsingPost(delReq);
+      hide();
       message.success('删除成功');
+      actionRef.current?.reload();
       return true;
     } catch (err: any) {
       hide();
@@ -84,13 +87,46 @@ const TableList: React.FC = () => {
   const handleRemoveOne = async (item: API.InterfaceInfo) => {
     const hide = message.loading('删除中');
     try {
-      hide();
       await deleteInterfaceInfoUsingPost({ id: item.id });
+      hide();
       message.success('删除成功');
+      actionRef.current?.reload();
       return true;
     } catch (err: any) {
       hide();
       message.error('删除失败' + err.message);
+      return false;
+    }
+  };
+
+  // 上线接口
+  const handleOnline = async (item: API.InterfaceInfo) => {
+    const hide = message.loading('发布中');
+    try {
+      await onlineInterfaceUsingPost({ id: item.id });
+      hide();
+      message.success('上线成功');
+      actionRef.current?.reload();
+      return true;
+    } catch (err: any) {
+      hide();
+      message.error('上线失败' + err.message);
+      return false;
+    }
+  };
+
+  // 下线接口
+  const handleOffline = async (item: API.InterfaceInfo) => {
+    const hide = message.loading('下线中');
+    try {
+      await offlineInterfaceUsingPost({ id: item.id });
+      hide();
+      message.success('下线成功');
+      actionRef.current?.reload();
+      return true;
+    } catch (err: any) {
+      hide();
+      message.error('下线失败' + err.message);
       return false;
     }
   };
@@ -188,8 +224,29 @@ const TableList: React.FC = () => {
       title: '操作',
       dataIndex: 'option',
       valueType: 'option',
-      width: 160,
+      width: 200,
       render: (_, record) => [
+        record.status === 0 ? (
+          <Button
+            type="text"
+            className="success-text"
+            onClick={() => {
+              handleOnline(record);
+            }}
+          >
+            上线
+          </Button>
+        ) : null,
+
+        record.status === 1 ? (
+          <Button type="text" danger onClick={() => handleOffline(record)}>
+            下线
+          </Button>
+        ) : null,
+
+        <a key="detail" href="https://procomponents.ant.design/">
+          查看
+        </a>,
         <a
           key="edit"
           onClick={() => {
@@ -200,9 +257,7 @@ const TableList: React.FC = () => {
         >
           修改
         </a>,
-        <a key="detail" href="https://procomponents.ant.design/">
-          查看
-        </a>,
+
         <a
           key="delete"
           className="danger-text"
@@ -215,12 +270,7 @@ const TableList: React.FC = () => {
               okType: 'danger',
               cancelText: '取消',
               onOk: async () => {
-                const success = await handleRemoveOne(record);
-                if (success) {
-                  if (actionRef.current) {
-                    actionRef.current.reload();
-                  }
-                }
+                await handleRemoveOne(record);
               },
               onCancel() {
                 console.log('Cancel');
@@ -337,12 +387,7 @@ const TableList: React.FC = () => {
           handleModalOpen(false);
         }}
         onSubmit={async (values) => {
-          const success = await handleAdd(values);
-          if (success) {
-            if (actionRef.current) {
-              actionRef.current.reload();
-            }
-          }
+          await handleAdd(values);
         }}
         visible={createModalOpen}
       />
@@ -353,14 +398,8 @@ const TableList: React.FC = () => {
         visible={updateModalOpen}
         initValue={currentRow || {}}
         onSubmit={async (value) => {
-          const success = await handleUpdate({ ...value, id: currentRow?.id });
-          if (success) {
-            handleUpdateModalOpen(false);
-            setCurrentRow(undefined);
-            if (actionRef.current) {
-              actionRef.current.reload();
-            }
-          }
+          await handleUpdate({ ...value, id: currentRow?.id });
+          handleUpdateModalOpen(false);
         }}
         onCancel={() => {
           handleUpdateModalOpen(false);

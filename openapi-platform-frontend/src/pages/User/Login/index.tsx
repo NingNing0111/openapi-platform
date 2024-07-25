@@ -77,10 +77,11 @@ const Login: React.FC = () => {
         const defaultLoginSuccessMessage = '登录成功！';
         message.success(defaultLoginSuccessMessage);
         const urlParams = new URL(window.location.href).searchParams;
-        history.push(urlParams.get('redirect') || '/');
         setInitialState({
           loginUser: res.data,
         });
+        history.push(urlParams.get('redirect') || '/');
+
         return;
       }
     } catch (error) {

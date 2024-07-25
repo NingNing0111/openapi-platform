@@ -19,7 +19,7 @@ export async function addInterfaceInfoUsingPost(
 
 /** deleteInterfaceInfo POST /api/interfaceInfo/delete */
 export async function deleteInterfaceInfoUsingPost(
-  body: API.DeleteRequest,
+  body: API.UpdateRequest,
   options?: { [key: string]: any },
 ) {
   return request<API.BaseResponseBoolean_>('/api/interfaceInfo/delete', {
@@ -83,6 +83,51 @@ export async function listInterfaceInfoByPageUsingPost(
   options?: { [key: string]: any },
 ) {
   return request<API.BaseResponsePageInterfaceInfo_>('/api/interfaceInfo/list/page', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  });
+}
+
+/** listInterfaceInfoVOByPage POST /api/interfaceInfo/list/page/vo */
+export async function listInterfaceInfoVoByPageUsingPost(
+  body: API.InterfaceInfoQueryRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseIPageInterfaceInfoVO_>('/api/interfaceInfo/list/page/vo', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  });
+}
+
+/** offlineInterface POST /api/interfaceInfo/offline */
+export async function offlineInterfaceUsingPost(
+  body: API.UpdateRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/interfaceInfo/offline', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  });
+}
+
+/** onlineInterface POST /api/interfaceInfo/online */
+export async function onlineInterfaceUsingPost(
+  body: API.UpdateRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/interfaceInfo/online', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

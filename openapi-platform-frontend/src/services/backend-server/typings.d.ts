@@ -11,6 +11,12 @@ declare namespace API {
     message?: string;
   };
 
+  type BaseResponseIPageInterfaceInfoVO_ = {
+    code?: number;
+    data?: IPageInterfaceInfoVO_;
+    message?: string;
+  };
+
   type BaseResponseLoginUserVO_ = {
     code?: number;
     data?: LoginUserVO;
@@ -69,10 +75,6 @@ declare namespace API {
     code?: number;
     data?: UserVO;
     message?: string;
-  };
-
-  type DeleteRequest = {
-    id?: number;
   };
 
   type getInterfaceInfoVOByIdUsingGETParams = {
@@ -159,6 +161,26 @@ declare namespace API {
     responseHeader?: string;
     status?: number;
     url?: string;
+  };
+
+  type InterfaceInfoVO = {
+    description?: string;
+    id?: number;
+    method?: string;
+    name?: string;
+    requestHeader?: string;
+    responseHeader?: string;
+    status?: number;
+    updateTime?: string;
+    url?: string;
+  };
+
+  type IPageInterfaceInfoVO_ = {
+    current?: number;
+    pages?: number;
+    records?: InterfaceInfoVO[];
+    size?: number;
+    total?: number;
   };
 
   type LoginUserVO = {
@@ -305,11 +327,18 @@ declare namespace API {
     userId?: number;
   };
 
+  type UpdateRequest = {
+    id?: number;
+  };
+
   type User = {
+    accessKey?: string;
     createTime?: string;
+    email?: string;
     id?: number;
     isDelete?: number;
     mpOpenId?: string;
+    secretKey?: string;
     unionId?: string;
     updateTime?: string;
     userAccount?: string;
