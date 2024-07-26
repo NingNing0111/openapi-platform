@@ -1,5 +1,7 @@
 package me.pgthinker;
 
+import cn.hutool.json.JSON;
+import cn.hutool.json.JSONUtil;
 import me.pgthinker.util.GenKeyUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -70,7 +72,7 @@ public class ApiAuthTest {
             builder.queryParam(entry.getKey(), entry.getValue());
         }
         // 请求头
-        HttpHeaders headers = initHeader(data.toString());
+        HttpHeaders headers = initHeader(JSONUtil.toJsonStr(data));
 
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(builder.toUriString(), HttpMethod.POST, requestEntity, String.class);
@@ -82,7 +84,7 @@ public class ApiAuthTest {
     public void postReqBodyTest() {
         Map<String, String> data = new HashMap<>();
         data.put("param","PG Thinker");
-        HttpHeaders headers = initHeader(data.toString());
+        HttpHeaders headers = initHeader(JSONUtil.toJsonStr(data));
         HttpEntity<Map<String, String>> mapHttpEntity = new HttpEntity<>(data,headers);
         ResponseEntity<String> exchange = restTemplate.exchange(POST_BODY_URL, HttpMethod.POST, mapHttpEntity, String.class);
         System.out.println(exchange.getStatusCode());

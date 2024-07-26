@@ -10,7 +10,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -23,7 +25,7 @@ import java.util.Map;
 @Component
 public class AuthFilter implements HandlerInterceptor {
     // 假设这个是获取到的secretKey
-    private final String TEST_SECRET_KEY = "mgHrUVWZtKbpBleqJlGThYlmDEjYjUHR";
+    private final String TEST_SECRET_KEY = "FcwQIXiWJCCtlTwlDsBsOQvWVwFoQMeO";
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String accessKey = request.getHeader("accessKey");
@@ -37,10 +39,11 @@ public class AuthFilter implements HandlerInterceptor {
         data.put("accessKey",accessKey);
         data.put("body",body);
         data.put("timestamp",timestamp);
-
         String calculateSign = GenKeyUtils.genSign(data, storeSecretKey);
+
         // 判断请求头中的sign和服务端计算出来的sign是否一致 来判断请求处理是否继续
         boolean checkResult = StringUtils.equals(sign, calculateSign);
+
         if(!checkResult){
             response.setStatus(HttpStatus.FORBIDDEN.value());
         }
