@@ -154,7 +154,24 @@ const InterfaceInfoManage: React.FC = () => {
     {
       title: '请求方法',
       dataIndex: 'method',
-      valueType: 'text',
+      valueEnum: {
+        GET: {
+          text: 'GET',
+          status: 'success',
+        },
+        POST: {
+          text: 'POST',
+          status: 'processing',
+        },
+        DELETE: {
+          text: 'DELETE',
+          status: 'error',
+        },
+        PUT: {
+          text: 'PUT',
+          status: 'warning',
+        },
+      },
       width: 80,
     },
     {
@@ -164,6 +181,15 @@ const InterfaceInfoManage: React.FC = () => {
       copyable: true,
       ellipsis: true,
       width: 260,
+    },
+    {
+      title: '请求参数描述',
+      dataIndex: 'requestParam',
+      valueType: 'textarea',
+      ellipsis: true,
+      copyable: true,
+      width: 360,
+      hideInSearch: true,
     },
     {
       title: '请求头',

@@ -1,10 +1,9 @@
-import {
-  getInterfaceInfoVoByIdUsingGet,
-  listInterfaceInfoVoByPageUsingPost,
-} from '@/services/backend-server/interfaceInfoController';
+import { getInterfaceInfoVoByIdUsingGet } from '@/services/backend-server/interfaceInfoController';
+import { debugUsingPost } from '@/services/backend-server/invokeController';
+import { initApiHeader } from '@/util/base';
 import { SyncOutlined, ToolOutlined } from '@ant-design/icons';
 import { PageContainer, ProDescriptions } from '@ant-design/pro-components';
-import { useParams } from '@umijs/max';
+import { useModel, useParams } from '@umijs/max';
 import { Button, Card, message } from 'antd';
 import { Divider } from 'antd/lib';
 import { useEffect, useState } from 'react';
@@ -18,10 +17,13 @@ const InterfaceDetail: React.FC = () => {
   const [waiting, setWaiting] = useState(false);
   const [invokeResult, setInvokeResult] = useState('');
   const [invokeParam, setInvokeParam] = useState('');
+  // 当前登录用户
+  const { initialState, setInitialState } = useModel('@@initialState');
 
   // 获取路由参数
   const params = useParams();
 
+  // 加载当前页的接口信息
   const loadApiInfo = async () => {
     if (!params.id) {
       message.error('接口信息不存在');
@@ -43,13 +45,41 @@ const InterfaceDetail: React.FC = () => {
 
   useEffect(() => {
     loadApiInfo();
+    setInvokeResult('');
+    setInvokeParam('');
+    setOpenInvoke(false);
   }, []);
 
+  // 处理调用请求
   const handleInvoke = async () => {
     setWaiting(true);
-    const res = await listInterfaceInfoVoByPageUsingPost({ current: 0, pageSize: 20 });
-    console.log(invokeParam);
-    setInvokeResult(JSON.stringify(res, null, 4));
+    setInvokeResult('');
+    try {
+      const params = JSON.parse(invokeParam);
+      // 请求头
+      const initHeader = initApiHeader(
+        params,
+        initialState?.loginUser?.secretKey ?? '',
+        initialState?.loginUser?.accessKey ?? '',
+      );
+      const header = { ...initHeader, ...JSON.parse(apiInfo?.requestHeader ?? '') };
+      const debugDto: API.InvokeDto = {
+        requestHeaders: JSON.stringify(header),
+        params: JSON.stringify(params),
+        method: apiInfo?.method,
+        accessKey: initialState?.loginUser?.accessKey,
+        url: apiInfo?.url,
+      };
+
+      const res = await debugUsingPost(debugDto);
+      if (res.code === 0) {
+        setInvokeResult(JSON.stringify(res.data, null, 4));
+      } else {
+        setInvokeResult(JSON.stringify(res, null, 4));
+      }
+    } catch (err: any) {
+      message.error('调试失败：' + err.message);
+    }
     setWaiting(false);
   };
 
@@ -66,6 +96,8 @@ const InterfaceDetail: React.FC = () => {
                 key={'refresh'}
                 onClick={async () => {
                   await loadApiInfo();
+                  setInvokeResult('');
+                  setInvokeParam('');
                   setOpenInvoke(false);
                 }}
               >

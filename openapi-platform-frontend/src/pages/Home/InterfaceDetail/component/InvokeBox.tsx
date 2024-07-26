@@ -1,5 +1,5 @@
 import { SendOutlined } from '@ant-design/icons';
-import { ProCard } from '@ant-design/pro-components';
+import { ProCard, ProDescriptions } from '@ant-design/pro-components';
 import { Button, Input, Tag } from 'antd';
 import RcResizeObserver from 'rc-resize-observer';
 import { useState } from 'react';
@@ -11,7 +11,7 @@ export type Props = {
   onChange: (value: string) => void; // 请求参数变化时的Hook
   visible: boolean; // 调试框是否出现
   loading: boolean; // 加载
-  doInvoke: () => void;
+  doInvoke: () => Promise<void>;
   invokeStatus: string;
 };
 const InvokeBox = (props: Props) => {
@@ -26,6 +26,22 @@ const InvokeBox = (props: Props) => {
     onChange,
     invokeStatus,
   } = props;
+  let result: any = {};
+
+  if (requestResult === null || requestResult === '') {
+    result = '{}';
+  } else {
+    try {
+      const decodeString = decodeURIComponent(requestResult);
+      result = JSON.parse(decodeString);
+      console.log(result);
+    } catch (err) {
+      console.log(err);
+
+      result = {};
+    }
+  }
+
   return (
     <RcResizeObserver
       key="resize-observer"
@@ -50,7 +66,7 @@ const InvokeBox = (props: Props) => {
               icon={<SendOutlined />}
               type="primary"
               key={'invoke'}
-              onClick={() => doInvoke()}
+              onClick={async () => await doInvoke()}
             >
               发送
             </Button>,
@@ -70,16 +86,39 @@ const InvokeBox = (props: Props) => {
               placeholder={JSON.stringify(JSON.parse(requestParamDes), null, 4)}
             />
           </ProCard>
-          <ProCard title="响应结果" loading={loading}>
-            <Input.TextArea
-              value={requestResult}
-              autoSize={{
-                minRows: 20,
-                maxRows: 20,
-              }}
-              style={{ height: 500 }}
-              placeholder={'等待发送'}
-            />
+
+          <ProCard loading={loading} title="响应结果" tooltip="包括响应状态码、响应头、响应结果">
+            <ProDescriptions layout="vertical" column={1}>
+              <ProDescriptions.Item key={'statusCode'} label="响应状态" valueType="text">
+                {JSON.stringify(result.statusCode) ?? '{}'}
+              </ProDescriptions.Item>
+              <ProDescriptions.Item
+                key={'statusCodeValue'}
+                label="状态码"
+                valueEnum={{
+                  200: {
+                    text: '200',
+                    status: 'success',
+                  },
+                  404: {
+                    text: '404',
+                    status: 'error',
+                  },
+                  403: {
+                    text: '403',
+                    status: 'error',
+                  },
+                }}
+              >
+                {result.statusCodeValue ?? -1}
+              </ProDescriptions.Item>
+              <ProDescriptions.Item key={'body'} label="响应数据" valueType={'jsonCode'}>
+                {JSON.stringify(result.body) ?? '{}'}
+              </ProDescriptions.Item>
+              <ProDescriptions.Item key={'响应头'} label="响应头" valueType={'jsonCode'}>
+                {JSON.stringify(result.headers) ?? '{}'}
+              </ProDescriptions.Item>
+            </ProDescriptions>
           </ProCard>
         </ProCard>
       )}
