@@ -109,6 +109,7 @@ declare namespace API {
     method?: string;
     name?: string;
     requestHeader?: string;
+    requestParam?: string;
     responseHeader?: string;
     status?: number;
     updateTime?: string;
@@ -121,6 +122,7 @@ declare namespace API {
     method?: string;
     name?: string;
     requestHeader?: string;
+    requestParam?: string;
     responseHeader?: string;
     url?: string;
   };
@@ -131,6 +133,7 @@ declare namespace API {
     method?: string;
     name?: string;
     requestHeader?: string;
+    requestParam?: string;
     responseHeader?: string;
     status?: number;
     url?: string;
@@ -158,6 +161,7 @@ declare namespace API {
     method?: string;
     name?: string;
     requestHeader?: string;
+    requestParam?: string;
     responseHeader?: string;
     status?: number;
     url?: string;
@@ -169,6 +173,7 @@ declare namespace API {
     method?: string;
     name?: string;
     requestHeader?: string;
+    requestParam?: string;
     responseHeader?: string;
     status?: number;
     updateTime?: string;
@@ -363,6 +368,7 @@ declare namespace API {
 
   type UserQueryRequest = {
     current?: number;
+    email?: string;
     id?: number;
     mpOpenId?: string;
     pageSize?: number;
@@ -388,18 +394,17 @@ declare namespace API {
 
   type UserUpdateRequest = {
     id?: number;
-    userAvatar?: string;
-    userName?: string;
-    userProfile?: string;
     userRole?: string;
   };
 
   type UserVO = {
+    accessKey?: string;
     createTime?: string;
+    email?: string;
     id?: number;
+    secretKey?: string;
     userAvatar?: string;
     userName?: string;
-    userProfile?: string;
     userRole?: string;
   };
 }

@@ -18,12 +18,10 @@ import './index.less';
 
 const { confirm } = Modal;
 
-const TableList: React.FC = () => {
+const InterfaceInfoManage: React.FC = () => {
   const [createModalOpen, handleModalOpen] = useState<boolean>(false);
 
   const [updateModalOpen, handleUpdateModalOpen] = useState<boolean>(false);
-
-  const [showDetail, setShowDetail] = useState<boolean>(false);
 
   const actionRef = useRef<ActionType>();
   const [currentRow, setCurrentRow] = useState<API.InterfaceInfo>();
@@ -205,7 +203,7 @@ const TableList: React.FC = () => {
     {
       title: '创建时间',
       dataIndex: 'createTime',
-      valueType: 'dateTime',
+      valueType: 'date',
       hideInForm: true,
       ellipsis: true,
       width: 160,
@@ -214,7 +212,7 @@ const TableList: React.FC = () => {
     {
       title: '更新时间',
       dataIndex: 'updateTime',
-      valueType: 'dateTime',
+      valueType: 'date',
       hideInForm: true,
       ellipsis: true,
       width: 160,
@@ -288,6 +286,7 @@ const TableList: React.FC = () => {
     current: number;
     pageSize: number;
   };
+
   return (
     <PageContainer>
       <ProTable<API.InterfaceInfo, PageParams>
@@ -403,13 +402,10 @@ const TableList: React.FC = () => {
         }}
         onCancel={() => {
           handleUpdateModalOpen(false);
-          if (!showDetail) {
-            setCurrentRow(undefined);
-          }
         }}
       />
     </PageContainer>
   );
 };
 
-export default TableList;
+export default InterfaceInfoManage;

@@ -31,6 +31,8 @@ public class InterfaceInfoEditRequest implements Serializable {
      */
     private String url;
 
+    private String requestParam;
+
     /**
      * 请求头
      */

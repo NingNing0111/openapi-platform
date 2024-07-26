@@ -29,6 +29,7 @@ public class InterfaceInfoVO {
      * 接口地址
      */
     private String url;
+    private String requestParam;
 
     /**
      * 请求头

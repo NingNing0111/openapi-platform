@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @Author: Pg thinker
+ * @Author: Pg Thinker
  * @Description: 描述接口状态的枚举类
  */
 @RequiredArgsConstructor

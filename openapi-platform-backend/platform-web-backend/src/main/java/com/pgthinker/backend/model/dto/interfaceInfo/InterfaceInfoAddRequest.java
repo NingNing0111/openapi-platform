@@ -29,6 +29,8 @@ public class InterfaceInfoAddRequest implements Serializable {
      */
     private String url;
 
+    private String requestParam;
+
     /**
      * 请求头
      */

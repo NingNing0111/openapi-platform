@@ -1,6 +1,7 @@
 import { listInterfaceInfoVoByPageUsingPost } from '@/services/backend-server/interfaceInfoController';
+import { CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons';
 import { PageContainer } from '@ant-design/pro-components';
-import { List, message } from 'antd';
+import { List, message, Tag } from 'antd';
 import { useEffect, useState } from 'react';
 
 const Index: React.FC = () => {
@@ -42,15 +43,28 @@ const Index: React.FC = () => {
           return (
             <List.Item
               actions={[
-                <a href={apiLink} key={item.id}>
+                <a href={apiLink} key={item.id} target="_blank" rel="noopener noreferrer">
                   查看
                 </a>,
               ]}
             >
               <List.Item.Meta
-                title={<a href={apiLink}>{item.name}</a>}
+                title={
+                  <a href={apiLink} target="_blank" rel="noopener noreferrer">
+                    {item.name}
+                  </a>
+                }
                 description={item.description}
               />
+              {item.status === 0 ? (
+                <Tag color="error" icon={<CloseCircleOutlined />}>
+                  下线
+                </Tag>
+              ) : (
+                <Tag color="success" icon={<CheckCircleOutlined />}>
+                  正常
+                </Tag>
+              )}
             </List.Item>
           );
         }}
@@ -60,6 +74,7 @@ const Index: React.FC = () => {
           onShowSizeChange(current, size) {
             setSelectPageSize(size);
           },
+          pageSize: selectPageSize,
           showTotal(t) {
             return `共计: ${t} 个接口`;
           },
