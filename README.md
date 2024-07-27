@@ -25,6 +25,22 @@
 - Node：v16.20.2
 - JDK 8 / 17
 
+## 本地开发说明
+
+- 首先需要部署项目环境，本项目提供了一个[docker-compose-dev.yml](https://github.com/NingNing0111/openapi-platform/blob/master/openapi-platform-backend/platform-web-backend/env/docker-compose-dev.yml)文件，用来快速搭建项目环境。只需进入到[openapi-platform-backend/platform-web-backend/env](openapi-platform-backend/platform-web-backend/env)目录下执行下述命令：
+
+```
+docker compose -f docker-compose-dev.yml up -d
+```
+
+> 项目使用了 Nacos、Redis、MySQL。对应的环境变量可在各个`*.env`文件中修改。由于 Nacos 配置了 MySQL，如果需要修改 Nacos 的数据库，需要自行对初始化的 SQL 脚本`init.sql`进行修改。
+
+- 后端项目模块说明：
+  - `openapi-platform-web`: 核心功能，提供页面数据、内部的 Dubbo 服务;
+  - `openapi-platform-provider`: 接口提供模块，这里主要实现用户调用的接口；
+  - `openapi-platform-gateway`: 网关，接口统一鉴权与路由，流量染色、统一业务处理、统一访问日志；
+  - `openapi-platform-common`: 公共模块 model、common、exception 等
+
 ## 效果图
 
 ![](./doc/images/home.png)
