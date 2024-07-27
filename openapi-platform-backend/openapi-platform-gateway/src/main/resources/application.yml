@@ -5,11 +5,11 @@ spring:
     gateway:
       routes:
         - id: api
-          uri: http://localhost:8765/api/**
+          uri: http://localhost:8765
           predicates:
             - Path=/api/**
         - id: web
-          uri: http://localhost:8101/api/**
+          uri: http://localhost:8101
           predicates:
             - Path=/web/**
 

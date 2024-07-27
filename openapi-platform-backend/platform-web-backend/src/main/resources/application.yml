@@ -37,7 +37,7 @@ server:
   address: 0.0.0.0
   port: 8101
   servlet:
-    context-path: /api
+    context-path: /web
     # cookie 30 天过期
     session:
       cookie:

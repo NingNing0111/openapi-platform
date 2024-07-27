@@ -1,6 +1,5 @@
 package me.pgthinker.gateway.filter;
 
-import cn.hutool.core.io.IoUtil;
 import lombok.extern.slf4j.Slf4j;
 import me.pgthinker.gateway.util.GenKeyUtils;
 import me.pgthinker.model.entity.InterfaceInfo;
@@ -11,31 +10,21 @@ import me.pgthinker.service.inner.AuthService;
 import me.pgthinker.service.inner.InvokeService;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.reactivestreams.Publisher;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
-import org.springframework.core.io.buffer.*;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.RequestPath;
 import org.springframework.http.server.reactive.ServerHttpRequest;
-import org.springframework.http.server.reactive.ServerHttpRequestDecorator;
 import org.springframework.http.server.reactive.ServerHttpResponse;
-import org.springframework.http.server.reactive.ServerHttpResponseDecorator;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Schedulers;
 
-import java.io.ByteArrayOutputStream;
-import java.nio.channels.Channels;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * @Project: me.pgthinker.gateway.filter
@@ -52,6 +41,8 @@ public class AuthFilter implements GlobalFilter, Ordered {
 
     private final String INTERFACE_PROVIDER_BASE_URL = "http://localhost:8765";
 
+    private final StringBuilder sb = new StringBuilder("yyyy年MM月dd日 HH:mm:ss");
+    private final SimpleDateFormat sdf = new SimpleDateFormat(sb.toString());
     @DubboReference
     private AuthService authService;
 
@@ -70,28 +61,30 @@ public class AuthFilter implements GlobalFilter, Ordered {
         String body = headers.getFirst("body");
         String sign = headers.getFirst("sign");
         String timestamp = headers.getFirst("timestamp");
+        // 根据请求地址获取对应的接口信息
+        String path = INTERFACE_PROVIDER_BASE_URL + request.getPath().value();
+        String methodValue = request.getMethodValue();
+        String requestId = request.getId();
+
+        log.info("{}-请求发起 id:{} uri:{} body:{} method:{}", sdf.format(new Date()),requestId,path,body,methodValue);
         if(ObjectUtils.anyNull(accessKey,sign,timestamp)){
-            return handleNoAuth(response);
+            return handleNoAuth(requestId,response);
         }
         // 如果请求的时间距今超过5分钟 则拒绝
         long currTime = System.currentTimeMillis();
         if((currTime - Long.parseLong(timestamp)) >= FIVE_MINUTES){
-            return handleNoAuth(response);
+            return handleNoAuth(requestId,response);
         }
         log.info("参数校验通过");
-
-        // 根据请求地址获取对应的接口信息
-        String path = INTERFACE_PROVIDER_BASE_URL + request.getPath().value();
-        String methodValue = request.getMethodValue();
         InterfaceInfo interfaceInfo = apiInfoService.matchInterfaceInfo(path, methodValue);
         if(ObjectUtils.isEmpty(interfaceInfo)){
-            return handleNoAuth(response);
+            return handleNoAuth(requestId,response);
         }
         log.info("接口信息校验通过");
         // 根据accessKey获取secretKey
         User storeUser = authService.authorUser(accessKey);
         if(ObjectUtils.isEmpty(storeUser)){
-            return handleNoAuth(response);
+            return handleNoAuth(requestId,response);
         }
         log.info("用户校验通过");
 
@@ -100,151 +93,72 @@ public class AuthFilter implements GlobalFilter, Ordered {
         data.put("accessKey",accessKey);
         data.put("body",body);
         data.put("timestamp",timestamp);
-        System.out.println(data);
-        System.out.println(storeSecretKey);
         String calculateSign = GenKeyUtils.genSign(data, storeSecretKey);
-        System.out.println(calculateSign);
-        System.out.println(sign);
         if(ObjectUtils.notEqual(sign,calculateSign)){
-            return handleNoAuth(response);
+            return handleNoAuth(requestId,response);
         }
         log.info("鉴权通过");
-
-        return handleResponse(exchange,chain,interfaceInfo.getId(),storeUser.getId());
+        return handleBodyHackerResponse(exchange,chain,interfaceInfo.getId(),storeUser.getId());
     }
+
+
+
+    private Mono<Void> handleBodyHackerResponse(ServerWebExchange exchange, GatewayFilterChain chain, long interfaceInfoId, long userId){
+        final ServerHttpRequest request = exchange.getRequest();
+        String methodValue = request.getMethodValue();
+        String path = request.getPath().value();
+        String requestId = request.getId();
+
+        BodyHackerFunction delegate = (resp, body) -> Flux.from(body)
+                .flatMap(orgBody -> {
+                    // 原始的response body
+                    byte[] orgContent = new byte[orgBody.readableByteCount()];
+                    orgBody.read(orgContent);
+
+                    String content = new String(orgContent);
+                    log.info("original body {}", content);
+
+                    // 如果调用成功 统计+1
+                    if(Objects.requireNonNull(resp.getStatusCode()).is2xxSuccessful()){
+                        UserInterfaceInfo userInterfaceInfo = invokeService.invokeCount(userId, interfaceInfoId);
+                        log.info("调用成功！url:{},method:{},info:{}", sdf.format(new Date()),path,methodValue,userInterfaceInfo);
+                    }
+                    // 如果500错误，则替换
+                    if (Objects.requireNonNull(resp.getStatusCode()).value() == 500) {
+                        content = String.format("{\"status\": %d,\"path\":\"%s\"}",
+                                resp.getStatusCode().value(),
+                                request.getPath().value());
+                    }
+                    // 告知客户端Body的长度，如果不设置的话客户端会一直处于等待状态不结束
+                    HttpHeaders headers = resp.getHeaders();
+                    headers.setContentLength(content.length());
+                    log.info("{} 请求结束 id:{} 结果:{}",  sdf.format(new Date()), requestId, content);
+                    return resp.writeWith(Flux.just(content)
+                            .map(bx -> resp.bufferFactory().wrap(bx.getBytes())));
+                }).then();
+
+        // 将装饰器当做Response返回
+        BodyHackerHttpResponseDecorator responseDecorator =
+                new BodyHackerHttpResponseDecorator(delegate, exchange.getResponse());
+
+        return chain.filter(exchange.mutate().response(responseDecorator).build());
+    }
+
 
     /**
-     * 处理响应
-     *
-     * @param exchange
-     * @param chain
+     * 必须设置高一点的权重
      * @return
      */
-    public Mono<Void> handleResponse(ServerWebExchange exchange, GatewayFilterChain chain, long interfaceInfoId, long userId) {
-        try {
-            ServerHttpResponse originalResponse = exchange.getResponse();
-            RequestPath path = exchange.getRequest().getPath();
-            String methodValue = exchange.getRequest().getMethodValue();
-            // 缓存数据的工厂
-            DataBufferFactory bufferFactory = originalResponse.bufferFactory();
-            // 拿到响应码
-            HttpStatus statusCode = originalResponse.getStatusCode();
-            if (statusCode == HttpStatus.OK) {
-                // 装饰，增强能力
-                ServerHttpResponseDecorator decoratedResponse = new ServerHttpResponseDecorator(originalResponse) {
-                    // 等调用完转发的接口后才会执行
-                    @Override
-                    public Mono<Void> writeWith(Publisher<? extends DataBuffer> body) {
-                        log.info("body instanceof Flux: {}", (body instanceof Flux));
-                        if (body instanceof Flux) {
-                            Flux<? extends DataBuffer> fluxBody = Flux.from(body);
-                            // 往返回值里写数据
-                            // 拼接字符串
-                            return super.writeWith(
-                                    fluxBody.map(dataBuffer -> {
-                                        // 7. 调用成功，接口调用次数 + 1 invokeCount
-                                        try {
-                                            UserInterfaceInfo userInterfaceInfo = invokeService.invokeCount(interfaceInfoId, userId);
-                                            log.info("接口调用成功！url：{},method:{},info:{}",path,methodValue,userInterfaceInfo.toString());
-
-                                        } catch (Exception e) {
-                                            log.error("invokeCount error", e);
-                                        }
-                                        byte[] content = new byte[dataBuffer.readableByteCount()];
-                                        dataBuffer.read(content);
-                                        DataBufferUtils.release(dataBuffer);//释放掉内存
-                                        // 构建日志
-                                        StringBuilder sb2 = new StringBuilder(200);
-                                        List<Object> rspArgs = new ArrayList<>();
-                                        rspArgs.add(originalResponse.getStatusCode());
-                                        String data = new String(content, StandardCharsets.UTF_8); //data
-                                        sb2.append(data);
-                                        // 打印日志
-                                        log.info("响应结果：" + data);
-                                        return bufferFactory.wrap(content);
-                                    }));
-                        } else {
-                            // 8. 调用失败，返回一个规范的错误码
-                            log.error("<--- {} 响应code异常", getStatusCode());
-                        }
-                        return super.writeWith(body);
-                    }
-                };
-                // 设置 response 对象为装饰过的
-                return chain.filter(exchange.mutate().response(decoratedResponse).build());
-            }
-            return chain.filter(exchange); // 降级处理返回数据
-        } catch (Exception e) {
-            log.error("网关处理响应异常" + e);
-            return chain.filter(exchange);
-        }
-    }
-
-
-
-
     @Override
     public int getOrder() {
-        return 0;
+        return -1;
     }
 
-    private Mono<Void> handleNoAuth(ServerHttpResponse response) {
+    private Mono<Void> handleNoAuth(String requestId,ServerHttpResponse response) {
         response.setStatusCode(HttpStatus.FORBIDDEN);
+        log.info("{} 请求结束 id:{} 结果:{}",  sdf.format(new Date()), requestId, HttpStatus.FORBIDDEN);
+
         return response.setComplete();
-    }
-
-
-    private ServerHttpResponseDecorator getDecoratedResponse(String path, ServerHttpResponse response, ServerHttpRequest request, DataBufferFactory dataBufferFactory) {
-        return new ServerHttpResponseDecorator(response) {
-
-            @Override
-            public Mono<Void> writeWith(final Publisher<? extends DataBuffer> body) {
-
-                if (body instanceof Flux) {
-
-                    Flux<? extends DataBuffer> fluxBody = (Flux<? extends DataBuffer>) body;
-
-                    return super.writeWith(fluxBody.buffer().map(dataBuffers -> {
-
-                        DefaultDataBuffer joinedBuffers = new DefaultDataBufferFactory().join(dataBuffers);
-                        byte[] content = new byte[joinedBuffers.readableByteCount()];
-                        joinedBuffers.read(content);
-                        String responseBody = new String(content, StandardCharsets.UTF_8);//MODIFY RESPONSE and Return the Modified response
-                        log.info("path: {},requestId: {}, method: {}, url: {}, \nresponse body :{}", path ,request.getId(), request.getMethod(), request.getURI(), responseBody);
-
-                        return dataBufferFactory.wrap(responseBody.getBytes());
-                    })).onErrorResume(err -> {
-
-                        log.error("error while decorating Response: {}",err.getMessage());
-                        return Mono.empty();
-                    });
-
-                }
-                return super.writeWith(body);
-            }
-        };
-    }
-
-    private ServerHttpRequest getDecoratedRequest(ServerHttpRequest request) {
-
-        return new ServerHttpRequestDecorator(request) {
-            @Override
-            public Flux<DataBuffer> getBody() {
-
-                log.info("requestId: {}, method: {} , url: {}", request.getId(), request.getMethod(), request.getURI());
-                return super.getBody().publishOn(Schedulers.boundedElastic()).doOnNext(dataBuffer -> {
-
-                    try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream()) {
-
-                        Channels.newChannel(byteArrayOutputStream).write(dataBuffer.asByteBuffer().asReadOnlyBuffer());
-                        String requestBody = IoUtil.toStr(byteArrayOutputStream, StandardCharsets.UTF_8);//MODIFY REQUEST and Return the Modified request
-                        log.info("for requestId: {}, request body :{}", request.getId(), requestBody);
-                    } catch (Exception e) {
-                        log.error(e.getMessage());
-                    }
-                });
-            }
-        };
     }
 
 }
