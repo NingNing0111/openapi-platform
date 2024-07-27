@@ -17,6 +17,7 @@ const InterfaceDetail: React.FC = () => {
   const [waiting, setWaiting] = useState(false);
   const [invokeResult, setInvokeResult] = useState('');
   const [invokeParam, setInvokeParam] = useState('');
+  const [isListShow, setListShow] = useState(false);
   // 当前登录用户
   const { initialState, setInitialState } = useModel('@@initialState');
 
@@ -54,6 +55,8 @@ const InterfaceDetail: React.FC = () => {
   const handleInvoke = async () => {
     setWaiting(true);
     setInvokeResult('');
+    const invoke = message.loading('调用中');
+
     try {
       const params = JSON.parse(invokeParam);
       // 请求头
@@ -72,12 +75,18 @@ const InterfaceDetail: React.FC = () => {
       };
 
       const res = await debugUsingPost(debugDto);
+      invoke();
+      message.success('调用成功');
       if (res.code === 0) {
+        setListShow(true);
         setInvokeResult(JSON.stringify(res.data, null, 4));
       } else {
+        setListShow(false);
         setInvokeResult(JSON.stringify(res, null, 4));
       }
     } catch (err: any) {
+      invoke();
+      setListShow(false);
       message.error('调试失败：' + err.message);
     }
     setWaiting(false);
@@ -185,21 +194,23 @@ const InterfaceDetail: React.FC = () => {
       </Card>
 
       <Divider />
-
-      <InvokeBox
-        requestParam={invokeParam}
-        requestResult={invokeResult}
-        onChange={(value: string) => {
-          setInvokeParam(value);
-        }}
-        visible={openInvoke}
-        loading={waiting}
-        doInvoke={async () => {
-          handleInvoke();
-        }}
-        requestParamDes={invokeApiInfo?.requestParam ?? ''}
-        invokeStatus="ok"
-      />
+      {apiInfo && invokeApiInfo && (
+        <InvokeBox
+          isListShow={isListShow}
+          requestParam={invokeParam}
+          requestResult={invokeResult}
+          onChange={(value: string) => {
+            setInvokeParam(value);
+          }}
+          visible={openInvoke}
+          loading={waiting}
+          doInvoke={async () => {
+            handleInvoke();
+          }}
+          requestParamDes={apiInfo.requestParam ?? '[{}]'}
+          invokeStatus="ok"
+        />
+      )}
     </PageContainer>
   );
 };

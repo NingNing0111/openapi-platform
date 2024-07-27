@@ -30,7 +30,6 @@ public class GenKeyUtils {
 
         Digester digester = new Digester(DigestAlgorithm.SHA256);
         String content = JSONUtil.toJsonStr(data) + "." + secretKey;
-        System.out.println("content:"+content);
 
         return digester.digestHex(content);
     }

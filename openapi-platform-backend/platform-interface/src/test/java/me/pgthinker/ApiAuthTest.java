@@ -21,8 +21,8 @@ import java.util.Map;
  */
 @SpringBootTest
 public class ApiAuthTest {
-    private final String ACCESS_KEY = "UZyrVxLdTuvxIdiD";
-    private final String SECRET_KEY = "mgHrUVWZtKbpBleqJlGThYlmDEjYjUHR";
+    private final String ACCESS_KEY = "cgSbdfbkQNlzfHdv";
+    private final String SECRET_KEY = "RPNNzSezlefEtOtztNvKKLVVhfnLKEvJ";
     private final String GET_URL = "http://localhost:8765/api/test/ping-get";
     private final String POST_PARAM_URL = "http://localhost:8765/api/test/ping-post-1";
     private final String POST_BODY_URL = "http://localhost:8765/api/test/ping-post-2";
@@ -34,6 +34,7 @@ public class ApiAuthTest {
         data.put("accessKey",ACCESS_KEY);
         data.put("body",body);
         data.put("timestamp",String.valueOf(timestamp));
+        System.out.println(data);
         // 生成签名
         String sign = GenKeyUtils.genSign(data, SECRET_KEY);
         // 构建请求头
@@ -54,6 +55,19 @@ public class ApiAuthTest {
         // 返回结果是字符串
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(GET_URL, HttpMethod.GET, requestEntity, String.class);
+        String body = responseEntity.getBody();
+        HttpStatusCode statusCode = responseEntity.getStatusCode();
+        System.out.println(body);
+        System.out.println(statusCode);
+    }
+
+    @Test
+    public void gateWayGetReqTest() {
+        HttpHeaders headers = initHeader("");
+
+        // 返回结果是字符串
+        HttpEntity<String> requestEntity = new HttpEntity<>(headers);
+        ResponseEntity<String> responseEntity = restTemplate.exchange("http://localhost:8890/api/test/ping-get", HttpMethod.GET, requestEntity, String.class);
         String body = responseEntity.getBody();
         HttpStatusCode statusCode = responseEntity.getStatusCode();
         System.out.println(body);

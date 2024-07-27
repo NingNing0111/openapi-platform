@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.pgthinker.backend.mapper.InterfaceInfoMapper">
+<mapper namespace="me.pgthinker.backend.mapper.InterfaceInfoMapper">
 
-    <resultMap id="BaseResultMap" type="com.pgthinker.backend.model.entity.InterfaceInfo">
+    <resultMap id="BaseResultMap" type="me.pgthinker.model.entity.InterfaceInfo">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="name" column="name" jdbcType="VARCHAR"/>
             <result property="description" column="description" jdbcType="VARCHAR"/>

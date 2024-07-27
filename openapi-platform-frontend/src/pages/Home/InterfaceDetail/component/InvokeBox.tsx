@@ -7,12 +7,13 @@ import { useState } from 'react';
 export type Props = {
   requestParam: string; // 请求参数字符串
   requestResult: string; // 请求结果
-  requestParamDes: string;
+  requestParamDes: string; // 参数描述
   onChange: (value: string) => void; // 请求参数变化时的Hook
   visible: boolean; // 调试框是否出现
   loading: boolean; // 加载
   doInvoke: () => Promise<void>;
   invokeStatus: string;
+  isListShow: boolean;
 };
 const InvokeBox = (props: Props) => {
   const [responsive, setResponsive] = useState(false);
@@ -25,6 +26,7 @@ const InvokeBox = (props: Props) => {
     doInvoke,
     onChange,
     invokeStatus,
+    isListShow,
   } = props;
   let result: any = {};
 
@@ -34,10 +36,7 @@ const InvokeBox = (props: Props) => {
     try {
       const decodeString = decodeURIComponent(requestResult);
       result = JSON.parse(decodeString);
-      console.log(result);
     } catch (err) {
-      console.log(err);
-
       result = {};
     }
   }
@@ -88,37 +87,49 @@ const InvokeBox = (props: Props) => {
           </ProCard>
 
           <ProCard loading={loading} title="响应结果" tooltip="包括响应状态码、响应头、响应结果">
-            <ProDescriptions layout="vertical" column={1}>
-              <ProDescriptions.Item key={'statusCode'} label="响应状态" valueType="text">
-                {JSON.stringify(result.statusCode) ?? '{}'}
-              </ProDescriptions.Item>
-              <ProDescriptions.Item
-                key={'statusCodeValue'}
-                label="状态码"
-                valueEnum={{
-                  200: {
-                    text: '200',
-                    status: 'success',
-                  },
-                  404: {
-                    text: '404',
-                    status: 'error',
-                  },
-                  403: {
-                    text: '403',
-                    status: 'error',
-                  },
+            {isListShow ? (
+              <ProDescriptions layout="vertical" column={1}>
+                <ProDescriptions.Item key={'statusCode'} label="响应状态" valueType="text">
+                  {JSON.stringify(result.statusCode) ?? '{}'}
+                </ProDescriptions.Item>
+                <ProDescriptions.Item
+                  key={'statusCodeValue'}
+                  label="状态码"
+                  valueEnum={{
+                    200: {
+                      text: '200',
+                      status: 'success',
+                    },
+                    404: {
+                      text: '404',
+                      status: 'error',
+                    },
+                    403: {
+                      text: '403',
+                      status: 'error',
+                    },
+                  }}
+                >
+                  {result.statusCodeValue ?? -1}
+                </ProDescriptions.Item>
+                <ProDescriptions.Item key={'body'} label="响应数据" valueType={'jsonCode'}>
+                  {JSON.stringify(result.body) ?? '{}'}
+                </ProDescriptions.Item>
+                <ProDescriptions.Item key={'响应头'} label="响应头" valueType={'jsonCode'}>
+                  {JSON.stringify(result.headers) ?? '{}'}
+                </ProDescriptions.Item>
+              </ProDescriptions>
+            ) : (
+              <Input.TextArea
+                onChange={(e) => onChange(e.target.value)}
+                value={requestResult}
+                autoSize={{
+                  minRows: 20,
+                  maxRows: 20,
                 }}
-              >
-                {result.statusCodeValue ?? -1}
-              </ProDescriptions.Item>
-              <ProDescriptions.Item key={'body'} label="响应数据" valueType={'jsonCode'}>
-                {JSON.stringify(result.body) ?? '{}'}
-              </ProDescriptions.Item>
-              <ProDescriptions.Item key={'响应头'} label="响应头" valueType={'jsonCode'}>
-                {JSON.stringify(result.headers) ?? '{}'}
-              </ProDescriptions.Item>
-            </ProDescriptions>
+                placeholder={requestResult}
+              />
+            )}
           </ProCard>
         </ProCard>
       )}

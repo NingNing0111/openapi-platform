@@ -2,7 +2,7 @@
 
 spring:
   application:
-    name: openapi-platform-backend
+    name: openapi-platform-web
   # 默认 dev 环境
   profiles:
     active: dev
@@ -62,4 +62,14 @@ knife4j:
       default:
         api-rule: package
         api-rule-resources:
-          - com.pgthinker.backend.controller
+          - me.pgthinker.backend.controller
+
+dubbo:
+  application:
+    name: openapi-platform-web
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848
