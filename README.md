@@ -11,6 +11,20 @@
 - Web Platform Core 模块：网站调用的接口，如登录、数据的 CRUD、接口调用数据分析等在这里实现；
 - RabbitMQ：消息队列用于将两个模块解耦，API Provider 的调用统计通过 MQ 传输;
 
+## 技术选型
+
+- 前端
+  - React + TypeScript
+  - Ant Design / Ant Design Pro
+  - Umi
+- 后端
+  - Spring Boot
+
+## 版本说明
+
+- Node：v16.20.2
+- JDK 8 / 17
+
 ## 效果图
 
 ![](./doc/images/home.png)
