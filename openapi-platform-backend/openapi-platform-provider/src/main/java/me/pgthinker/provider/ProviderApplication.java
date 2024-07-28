@@ -1,4 +1,4 @@
-package me.pgthinker;
+package me.pgthinker.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,9 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Description:
  */
 @SpringBootApplication
-public class MainApplication {
+public class ProviderApplication {
     public static void main(String[] args) {
 
-        SpringApplication.run(MainApplication.class,args);
+        SpringApplication.run(ProviderApplication.class,args);
     }
 }

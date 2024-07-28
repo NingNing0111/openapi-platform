@@ -1,8 +1,7 @@
-package me.pgthinker;
+package me.pgthinker.provider;
 
-import cn.hutool.json.JSON;
 import cn.hutool.json.JSONUtil;
-import me.pgthinker.util.GenKeyUtils;
+import me.pgthinker.utils.GenKeyUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.*;
@@ -21,8 +20,8 @@ import java.util.Map;
  */
 @SpringBootTest
 public class ApiAuthTest {
-    private final String ACCESS_KEY = "cgSbdfbkQNlzfHdv";
-    private final String SECRET_KEY = "RPNNzSezlefEtOtztNvKKLVVhfnLKEvJ";
+    private final String ACCESS_KEY = "JABkoIIvOpludFcF";
+    private final String SECRET_KEY = "VapDwyCDKLmxhtqDaVEKFIlTOEpctCmi";
     private final String GET_URL = "http://localhost:8765/api/test/ping-get";
     private final String POST_PARAM_URL = "http://localhost:8765/api/test/ping-post-1";
     private final String POST_BODY_URL = "http://localhost:8765/api/test/ping-post-2";
@@ -56,7 +55,7 @@ public class ApiAuthTest {
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(GET_URL, HttpMethod.GET, requestEntity, String.class);
         String body = responseEntity.getBody();
-        HttpStatusCode statusCode = responseEntity.getStatusCode();
+        HttpStatus statusCode = responseEntity.getStatusCode();
         System.out.println(body);
         System.out.println(statusCode);
     }
@@ -69,7 +68,7 @@ public class ApiAuthTest {
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange("http://localhost:8890/api/test/ping-get", HttpMethod.GET, requestEntity, String.class);
         String body = responseEntity.getBody();
-        HttpStatusCode statusCode = responseEntity.getStatusCode();
+        HttpStatus statusCode = responseEntity.getStatusCode();
         System.out.println(body);
         System.out.println(statusCode);
     }

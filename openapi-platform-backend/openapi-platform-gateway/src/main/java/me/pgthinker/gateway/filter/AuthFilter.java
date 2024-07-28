@@ -1,13 +1,13 @@
 package me.pgthinker.gateway.filter;
 
 import lombok.extern.slf4j.Slf4j;
-import me.pgthinker.gateway.util.GenKeyUtils;
 import me.pgthinker.model.entity.InterfaceInfo;
 import me.pgthinker.model.entity.User;
 import me.pgthinker.model.entity.UserInterfaceInfo;
 import me.pgthinker.service.inner.ApiInfoService;
 import me.pgthinker.service.inner.AuthService;
 import me.pgthinker.service.inner.InvokeService;
+import me.pgthinker.utils.GenKeyUtils;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
@@ -70,27 +70,26 @@ public class AuthFilter implements GlobalFilter, Ordered {
         String methodValue = request.getMethodValue();
         String requestId = request.getId();
         long currTime = System.currentTimeMillis();
-
-        log.info("{}-请求发起 id:{} uri:{} body:{} method:{}", sdf.format(new Date()),requestId,path,body,methodValue);
-        log.info("accessKey:{},body:{},sign:{},currTime - timestamp:{}",accessKey,body,sign,currTime-Long.parseLong(timestamp));
-
         if(ObjectUtils.anyNull(accessKey,sign,timestamp)){
             return handleNoAuth(requestId,response);
         }
+        log.info("{}-请求发起 id:{} uri:{} method:{}", sdf.format(new Date()),requestId,path,methodValue);
+        log.info("accessKey:{},body:{},sign:{},timestamp:{},currTime - timestamp:{}",accessKey, body,sign,timestamp,currTime-Long.parseLong(timestamp));
         // 如果请求的时间距今超过5分钟 则拒绝
-
         if((currTime - Long.parseLong(timestamp)) >= FIVE_MINUTES){
             return handleNoAuth(requestId,response);
         }
         log.info("参数校验通过");
         InterfaceInfo interfaceInfo = apiInfoService.matchInterfaceInfo(path, methodValue);
         if(ObjectUtils.isEmpty(interfaceInfo)){
+            log.error("storeInterfaceInfo:{}", interfaceInfo);
             return handleNoAuth(requestId,response);
         }
         log.info("接口信息校验通过");
         // 根据accessKey获取secretKey
         User storeUser = authService.authorUser(accessKey);
         if(ObjectUtils.isEmpty(storeUser)){
+            log.error("storeUser:{}", storeUser);
             return handleNoAuth(requestId,response);
         }
         log.info("用户校验通过");
@@ -102,6 +101,8 @@ public class AuthFilter implements GlobalFilter, Ordered {
         data.put("timestamp",timestamp);
         String calculateSign = GenKeyUtils.genSign(data, storeSecretKey);
         if(ObjectUtils.notEqual(sign,calculateSign)){
+            log.error("auth data:{} secretKey:{}", data, storeSecretKey);
+            log.error("sign:{} \ncalculateSign:{}", sign,calculateSign);
             return handleNoAuth(requestId,response);
         }
         log.info("鉴权通过");

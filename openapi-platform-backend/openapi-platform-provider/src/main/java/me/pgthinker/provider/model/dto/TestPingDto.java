@@ -1,4 +1,4 @@
-package me.pgthinker.model.dto;
+package me.pgthinker.provider.model.dto;
 
 import lombok.Data;
 

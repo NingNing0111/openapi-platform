@@ -1,4 +1,4 @@
-package me.pgthinker;
+package me.pgthinker.provider;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

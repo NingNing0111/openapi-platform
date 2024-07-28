@@ -1,6 +1,6 @@
-package me.pgthinker.controller;
+package me.pgthinker.provider.controller;
 
-import me.pgthinker.model.dto.TestPingDto;
+import me.pgthinker.provider.model.dto.TestPingDto;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/test")
-//@CrossOrigin("*")
 public class TestController {
     @GetMapping("/ping-get")
     public String pingGet() {
