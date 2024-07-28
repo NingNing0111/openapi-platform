@@ -37,9 +37,9 @@ import java.util.*;
 @Component
 public class AuthFilter implements GlobalFilter, Ordered {
 
-    private final Long FIVE_MINUTES = 60 * 5L;
+    private final Long FIVE_MINUTES = 60 * 5 * 1000L;
 
-    private final String INTERFACE_PROVIDER_BASE_URL = "http://localhost:8765";
+    private final String INTERFACE_PROVIDER_BASE_URL = "http://localhost:8890";
 
     private final StringBuilder sb = new StringBuilder("yyyy年MM月dd日 HH:mm:ss");
     private final SimpleDateFormat sdf = new SimpleDateFormat(sb.toString());
@@ -56,22 +56,29 @@ public class AuthFilter implements GlobalFilter, Ordered {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
+        String pathValue = request.getPath().value();
+        if(pathValue.startsWith("/web")){
+            return chain.filter(exchange);
+        }
         HttpHeaders headers = request.getHeaders();
         String accessKey = headers.getFirst("accessKey");
         String body = headers.getFirst("body");
         String sign = headers.getFirst("sign");
         String timestamp = headers.getFirst("timestamp");
         // 根据请求地址获取对应的接口信息
-        String path = INTERFACE_PROVIDER_BASE_URL + request.getPath().value();
+        String path = INTERFACE_PROVIDER_BASE_URL + pathValue;
         String methodValue = request.getMethodValue();
         String requestId = request.getId();
+        long currTime = System.currentTimeMillis();
 
         log.info("{}-请求发起 id:{} uri:{} body:{} method:{}", sdf.format(new Date()),requestId,path,body,methodValue);
+        log.info("accessKey:{},body:{},sign:{},currTime - timestamp:{}",accessKey,body,sign,currTime-Long.parseLong(timestamp));
+
         if(ObjectUtils.anyNull(accessKey,sign,timestamp)){
             return handleNoAuth(requestId,response);
         }
         // 如果请求的时间距今超过5分钟 则拒绝
-        long currTime = System.currentTimeMillis();
+
         if((currTime - Long.parseLong(timestamp)) >= FIVE_MINUTES){
             return handleNoAuth(requestId,response);
         }

@@ -6,9 +6,11 @@ import * as checkController from './checkController';
 import * as interfaceInfoController from './interfaceInfoController';
 import * as invokeController from './invokeController';
 import * as userController from './userController';
+import * as userInterfaceInfoController from './userInterfaceInfoController';
 export default {
   checkController,
   interfaceInfoController,
   invokeController,
   userController,
+  userInterfaceInfoController,
 };

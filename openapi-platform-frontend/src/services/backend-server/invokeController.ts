@@ -2,9 +2,9 @@
 /* eslint-disable */
 import { request } from '@umijs/max';
 
-/** debug POST /api/invoke/debug */
+/** debug POST /web/invoke/debug */
 export async function debugUsingPost(body: API.InvokeDto, options?: { [key: string]: any }) {
-  return request<API.BaseResponse>('/api/invoke/debug', {
+  return request<API.BaseResponse>('/web/invoke/debug', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
