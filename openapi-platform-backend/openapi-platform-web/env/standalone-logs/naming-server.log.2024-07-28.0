@@ -1,0 +1,1164 @@
+2024-07-28 00:04:47,357 INFO Client connection 1722096287340_192.168.65.1_49455 connect
+
+2024-07-28 00:04:47,507 INFO Client connection 1722096287494_192.168.65.1_49456 connect
+
+2024-07-28 00:08:17,131 INFO Client connection 1722096497075_192.168.65.1_49479 connect
+
+2024-07-28 00:08:18,506 INFO Client connection 1722096497945_192.168.65.1_49480 connect
+
+2024-07-28 00:12:15,796 INFO Client connection 1722096287340_192.168.65.1_49455 disconnect, remove instances and subscribers
+
+2024-07-28 00:12:17,917 INFO Client connection 1722096279763_192.168.65.1_49444 disconnect, remove instances and subscribers
+
+2024-07-28 00:12:40,889 INFO Client connection 1722096760864_192.168.65.1_49519 connect
+
+2024-07-28 00:12:41,103 INFO Client connection 1722096761065_192.168.65.1_49520 connect
+
+2024-07-28 00:52:20,514 INFO Client connection 1722096760864_192.168.65.1_49519 disconnect, remove instances and subscribers
+
+2024-07-28 00:52:20,580 INFO Client connection 1722096757205_192.168.65.1_49508 disconnect, remove instances and subscribers
+
+2024-07-28 00:56:39,401 INFO Client connection 1722096497075_192.168.65.1_49479 disconnect, remove instances and subscribers
+
+2024-07-28 00:56:47,814 INFO Client connection 1722096485990_192.168.65.1_49478 disconnect, remove instances and subscribers
+
+2024-07-28 00:56:48,435 INFO Client connection 1722096497945_192.168.65.1_49480 disconnect, remove instances and subscribers
+
+2024-07-28 00:57:08,820 INFO Client connection 1722096761065_192.168.65.1_49520 disconnect, remove instances and subscribers
+
+2024-07-28 00:57:08,930 INFO Client connection 1722096752743_192.168.65.1_49507 disconnect, remove instances and subscribers
+
+2024-07-28 00:57:08,935 INFO Client connection 1722096287494_192.168.65.1_49456 disconnect, remove instances and subscribers
+
+2024-07-28 01:06:08,661 INFO Client connection 1722099968467_192.168.65.1_49579 connect
+
+2024-07-28 01:06:09,986 INFO Client connection 1722099969836_192.168.65.1_49580 connect
+
+2024-07-28 01:06:11,748 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}, 1722099969836_192.168.65.1_49580
+
+2024-07-28 01:06:14,019 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}, 1722099969836_192.168.65.1_49580
+
+2024-07-28 01:06:14,828 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}, 1722099969836_192.168.65.1_49580
+
+2024-07-28 01:06:15,604 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=0}, 1722099968467_192.168.65.1_49579
+
+2024-07-28 01:13:28,165 INFO Client connection 1722100405522_192.168.65.1_49599 disconnect, remove instances and subscribers
+
+2024-07-28 01:15:31,924 INFO Client connection 1722100531905_192.168.65.1_49601 connect
+
+2024-07-28 01:15:32,954 INFO Client connection 1722100532934_192.168.65.1_49602 connect
+
+2024-07-28 01:55:02,069 INFO Client connection 1722100532934_192.168.65.1_49602 disconnect, remove instances and subscribers
+
+2024-07-28 01:55:02,314 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 01:55:02,314 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 01:55:02,385 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 01:55:02,400 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 01:55:02,401 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 01:55:02,446 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 01:55:04,642 INFO Client connection 1722100525858_192.168.65.1_49600 disconnect, remove instances and subscribers
+
+2024-07-28 01:55:05,531 INFO Client connection 1722100533116_192.168.65.1_49603 disconnect, remove instances and subscribers
+
+2024-07-28 01:55:05,535 INFO Client connection 1722100531905_192.168.65.1_49601 disconnect, remove instances and subscribers
+
+2024-07-28 01:55:35,425 INFO Client connection 1722102935406_192.168.65.1_49651 connect
+
+2024-07-28 01:55:36,185 INFO Client connection 1722102936170_192.168.65.1_49652 connect
+
+2024-07-28 01:57:51,240 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 01:57:51,213 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 01:57:52,777 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 01:57:52,780 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 01:57:52,851 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 01:57:53,393 INFO Client connection 1722102936170_192.168.65.1_49652 disconnect, remove instances and subscribers
+
+2024-07-28 01:57:55,102 INFO Client connection 1722102926659_192.168.65.1_49650 disconnect, remove instances and subscribers
+
+2024-07-28 01:57:55,857 INFO Client connection 1722102936356_192.168.65.1_49653 disconnect, remove instances and subscribers
+
+2024-07-28 01:57:55,859 INFO Client connection 1722102935406_192.168.65.1_49651 disconnect, remove instances and subscribers
+
+2024-07-28 01:58:14,954 INFO Client connection 1722103094932_192.168.65.1_49655 connect
+
+2024-07-28 01:58:15,748 INFO Client connection 1722103095719_192.168.65.1_49656 connect
+
+2024-07-28 02:03:05,318 INFO Client connection 1722103095719_192.168.65.1_49656 disconnect, remove instances and subscribers
+
+2024-07-28 02:03:05,464 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:03:05,464 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:03:05,615 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:03:05,658 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:03:05,673 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:03:05,706 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:03:07,937 INFO Client connection 1722103091244_192.168.65.1_49654 disconnect, remove instances and subscribers
+
+2024-07-28 02:03:08,458 INFO Client connection 1722103095884_192.168.65.1_49657 disconnect, remove instances and subscribers
+
+2024-07-28 02:03:08,460 INFO Client connection 1722103094932_192.168.65.1_49655 disconnect, remove instances and subscribers
+
+2024-07-28 02:03:21,723 INFO Client connection 1722103401687_192.168.65.1_49661 connect
+
+2024-07-28 02:03:22,756 INFO Client connection 1722103402745_192.168.65.1_49662 connect
+
+2024-07-28 02:04:27,575 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:04:27,574 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:04:27,588 INFO Client connection 1722103402745_192.168.65.1_49662 disconnect, remove instances and subscribers
+
+2024-07-28 02:04:27,628 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:04:27,634 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:04:27,641 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:04:27,648 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:04:29,968 INFO Client connection 1722103397902_192.168.65.1_49660 disconnect, remove instances and subscribers
+
+2024-07-28 02:04:30,293 INFO Client connection 1722103401687_192.168.65.1_49661 disconnect, remove instances and subscribers
+
+2024-07-28 02:04:30,296 INFO Client connection 1722103402817_192.168.65.1_49663 disconnect, remove instances and subscribers
+
+2024-07-28 02:04:43,836 INFO Client connection 1722103483817_192.168.65.1_49669 connect
+
+2024-07-28 02:04:44,485 INFO Client connection 1722103484470_192.168.65.1_49670 connect
+
+2024-07-28 02:08:46,734 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:08:46,734 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:08:46,744 INFO Client connection 1722103484470_192.168.65.1_49670 disconnect, remove instances and subscribers
+
+2024-07-28 02:08:46,775 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:08:46,793 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:08:46,793 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:08:46,808 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:08:49,077 INFO Client connection 1722103479982_192.168.65.1_49667 disconnect, remove instances and subscribers
+
+2024-07-28 02:08:49,574 INFO Client connection 1722103483817_192.168.65.1_49669 disconnect, remove instances and subscribers
+
+2024-07-28 02:08:49,576 INFO Client connection 1722103484631_192.168.65.1_49671 disconnect, remove instances and subscribers
+
+2024-07-28 02:09:05,020 INFO Client connection 1722103744989_192.168.65.1_49691 connect
+
+2024-07-28 02:09:05,672 INFO Client connection 1722103745661_192.168.65.1_49692 connect
+
+2024-07-28 02:09:31,899 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:09:31,898 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:09:31,923 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:09:31,932 INFO Client connection 1722103745661_192.168.65.1_49692 disconnect, remove instances and subscribers
+
+2024-07-28 02:09:31,943 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:09:31,953 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:09:34,336 INFO Client connection 1722103740918_192.168.65.1_49690 disconnect, remove instances and subscribers
+
+2024-07-28 02:09:34,680 INFO Client connection 1722103744989_192.168.65.1_49691 disconnect, remove instances and subscribers
+
+2024-07-28 02:09:34,683 INFO Client connection 1722103745910_192.168.65.1_49693 disconnect, remove instances and subscribers
+
+2024-07-28 02:09:49,258 INFO Client connection 1722103789210_192.168.65.1_49695 connect
+
+2024-07-28 02:09:49,999 INFO Client connection 1722103789987_192.168.65.1_49696 connect
+
+2024-07-28 02:13:47,086 INFO Client connection 1722103789987_192.168.65.1_49696 disconnect, remove instances and subscribers
+
+2024-07-28 02:13:47,094 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:13:47,094 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:13:47,129 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:13:47,145 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:13:47,145 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:13:47,173 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:13:49,428 INFO Client connection 1722103785957_192.168.65.1_49694 disconnect, remove instances and subscribers
+
+2024-07-28 02:13:50,036 INFO Client connection 1722103789210_192.168.65.1_49695 disconnect, remove instances and subscribers
+
+2024-07-28 02:13:50,046 INFO Client connection 1722103790155_192.168.65.1_49697 disconnect, remove instances and subscribers
+
+2024-07-28 02:13:54,135 INFO Client connection 1722099968467_192.168.65.1_49579 disconnect, remove instances and subscribers
+
+2024-07-28 02:13:54,176 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, 1722099969836_192.168.65.1_49580
+
+2024-07-28 02:13:54,242 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, 1722099969836_192.168.65.1_49580
+
+2024-07-28 02:13:54,251 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, 1722099969836_192.168.65.1_49580
+
+2024-07-28 02:13:56,940 INFO Client connection 1722099972402_192.168.65.1_49581 disconnect, remove instances and subscribers
+
+2024-07-28 02:13:56,943 INFO Client connection 1722099969836_192.168.65.1_49580 disconnect, remove instances and subscribers
+
+2024-07-28 02:13:56,952 INFO Client connection 1722099915263_192.168.65.1_49568 disconnect, remove instances and subscribers
+
+2024-07-28 02:15:00,548 WARN namespace : public, [DEFAULT_GROUP@@openapi-platform-web] services are automatically cleaned
+
+2024-07-28 02:15:00,554 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.AuthService::] services are automatically cleaned
+
+2024-07-28 02:15:00,555 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.ApiInfoService::] services are automatically cleaned
+
+2024-07-28 02:15:00,556 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.InvokeService::] services are automatically cleaned
+
+2024-07-28 02:24:52,631 INFO Client connection 1722104692573_192.168.65.1_49715 connect
+
+2024-07-28 02:24:53,166 INFO Client connection 1722104693138_192.168.65.1_49717 connect
+
+2024-07-28 02:24:53,556 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:24:54,512 INFO Client connection 1722104693138_192.168.65.1_49717 disconnect, remove instances and subscribers
+
+2024-07-28 02:24:56,861 INFO Client connection 1722104686947_192.168.65.1_49712 disconnect, remove instances and subscribers
+
+2024-07-28 02:24:57,180 INFO Client connection 1722104697115_192.168.65.1_49727 connect
+
+2024-07-28 02:24:57,494 INFO Client connection 1722104697473_192.168.65.1_49728 connect
+
+2024-07-28 02:24:57,544 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}, 1722104697473_192.168.65.1_49728
+
+2024-07-28 02:24:58,302 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}, 1722104697473_192.168.65.1_49728
+
+2024-07-28 02:24:58,641 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}, 1722104697473_192.168.65.1_49728
+
+2024-07-28 02:24:59,170 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=0}, 1722104697115_192.168.65.1_49727
+
+2024-07-28 02:25:00,308 INFO Client connection 1722104692573_192.168.65.1_49715 disconnect, remove instances and subscribers
+
+2024-07-28 02:25:00,312 INFO Client connection 1722104693358_192.168.65.1_49722 disconnect, remove instances and subscribers
+
+2024-07-28 02:25:28,520 INFO Client connection 1722104728437_192.168.65.1_49731 connect
+
+2024-07-28 02:25:29,249 INFO Client connection 1722104729224_192.168.65.1_49732 connect
+
+2024-07-28 02:45:21,161 INFO Client connection 1722104729224_192.168.65.1_49732 disconnect, remove instances and subscribers
+
+2024-07-28 02:45:21,222 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:45:21,222 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:45:21,356 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:45:21,375 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:45:21,377 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:45:21,409 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:45:23,670 INFO Client connection 1722104725466_192.168.65.1_49730 disconnect, remove instances and subscribers
+
+2024-07-28 02:45:24,159 INFO Client connection 1722104729329_192.168.65.1_49733 disconnect, remove instances and subscribers
+
+2024-07-28 02:45:24,161 INFO Client connection 1722104728437_192.168.65.1_49731 disconnect, remove instances and subscribers
+
+2024-07-28 02:45:41,798 INFO Client connection 1722105941777_192.168.65.1_49747 connect
+
+2024-07-28 02:45:42,494 INFO Client connection 1722105942481_192.168.65.1_49748 connect
+
+2024-07-28 02:52:16,635 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:52:16,635 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:52:16,861 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:52:16,887 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:52:16,906 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:52:17,003 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:52:17,060 INFO Client connection 1722105942481_192.168.65.1_49748 disconnect, remove instances and subscribers
+
+2024-07-28 02:52:19,931 INFO Client connection 1722105938334_192.168.65.1_49746 disconnect, remove instances and subscribers
+
+2024-07-28 02:52:20,611 INFO Client connection 1722105941777_192.168.65.1_49747 disconnect, remove instances and subscribers
+
+2024-07-28 02:52:20,657 INFO Client connection 1722105942681_192.168.65.1_49749 disconnect, remove instances and subscribers
+
+2024-07-28 02:52:39,888 INFO Client connection 1722106359865_192.168.65.1_49752 connect
+
+2024-07-28 02:52:40,579 INFO Client connection 1722106360565_192.168.65.1_49753 connect
+
+2024-07-28 02:53:47,081 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:53:47,081 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 02:53:47,116 INFO Client connection 1722106360565_192.168.65.1_49753 disconnect, remove instances and subscribers
+
+2024-07-28 02:53:47,130 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:53:47,157 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:53:47,161 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:53:47,189 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 02:53:49,513 INFO Client connection 1722106356060_192.168.65.1_49751 disconnect, remove instances and subscribers
+
+2024-07-28 02:53:50,083 INFO Client connection 1722106359865_192.168.65.1_49752 disconnect, remove instances and subscribers
+
+2024-07-28 02:53:50,088 INFO Client connection 1722106360951_192.168.65.1_49754 disconnect, remove instances and subscribers
+
+2024-07-28 02:55:00,166 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, 1722104697473_192.168.65.1_49728
+
+2024-07-28 02:55:00,223 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=2}, 1722104697473_192.168.65.1_49728
+
+2024-07-28 02:55:00,570 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, 1722104697473_192.168.65.1_49728
+
+2024-07-28 02:55:00,642 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, 1722104697473_192.168.65.1_49728
+
+2024-07-28 02:55:00,831 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=1}, 1722104697115_192.168.65.1_49727
+
+2024-07-28 02:55:00,938 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=2}, 1722104697115_192.168.65.1_49727
+
+2024-07-28 02:55:02,587 WARN task com.alibaba.nacos.naming.push.v2.task.PushExecuteTask@2555b4ad takes 1398ms
+
+2024-07-28 02:55:02,587 WARN task com.alibaba.nacos.naming.push.v2.task.PushExecuteTask@7dd5c6a2 takes 1381ms
+
+2024-07-28 02:55:03,032 INFO Client connection 1722104697115_192.168.65.1_49727 disconnect, remove instances and subscribers
+
+2024-07-28 02:55:04,075 INFO Client connection 1722104690700_192.168.65.1_49713 disconnect, remove instances and subscribers
+
+2024-07-28 02:55:12,965 INFO Client connection 1722106512855_192.168.65.1_49778 connect
+
+2024-07-28 02:55:14,482 INFO Client connection 1722106514440_192.168.65.1_49780 connect
+
+2024-07-28 02:55:14,811 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 02:55:16,865 INFO Client connection 1722106514440_192.168.65.1_49780 disconnect, remove instances and subscribers
+
+2024-07-28 02:55:19,009 INFO Client connection 1722106505367_192.168.65.1_49777 disconnect, remove instances and subscribers
+
+2024-07-28 02:55:22,653 INFO Client connection 1722106514645_192.168.65.1_49781 disconnect, remove instances and subscribers
+
+2024-07-28 02:55:22,658 INFO Client connection 1722106512855_192.168.65.1_49778 disconnect, remove instances and subscribers
+
+2024-07-28 02:55:25,381 INFO Client connection 1722106525286_192.168.65.1_49792 connect
+
+2024-07-28 02:55:25,565 INFO Client connection 1722106525551_192.168.65.1_49793 connect
+
+2024-07-28 02:55:25,597 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=2}, 1722106525551_192.168.65.1_49793
+
+2024-07-28 02:55:26,016 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=2}, 1722106525551_192.168.65.1_49793
+
+2024-07-28 02:55:26,326 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=2}, 1722106525551_192.168.65.1_49793
+
+2024-07-28 02:55:26,915 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=4}, 1722106525286_192.168.65.1_49792
+
+2024-07-28 02:55:43,651 INFO Client connection 1722106543618_192.168.65.1_49796 connect
+
+2024-07-28 02:55:44,470 INFO Client connection 1722106544450_192.168.65.1_49797 connect
+
+2024-07-28 03:08:33,552 INFO Client connection 1722106544450_192.168.65.1_49797 disconnect, remove instances and subscribers
+
+2024-07-28 03:08:33,611 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 03:08:33,612 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 03:08:33,744 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 03:08:33,783 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 03:08:33,785 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 03:08:33,808 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 03:08:35,993 INFO Client connection 1722106540253_192.168.65.1_49795 disconnect, remove instances and subscribers
+
+2024-07-28 03:08:36,589 INFO Client connection 1722106543618_192.168.65.1_49796 disconnect, remove instances and subscribers
+
+2024-07-28 03:08:36,595 INFO Client connection 1722106544568_192.168.65.1_49798 disconnect, remove instances and subscribers
+
+2024-07-28 03:08:52,117 INFO Client connection 1722107332080_192.168.65.1_49812 connect
+
+2024-07-28 03:08:52,972 INFO Client connection 1722107332960_192.168.65.1_49813 connect
+
+2024-07-28 03:11:42,464 INFO Client connection 1722107332960_192.168.65.1_49813 disconnect, remove instances and subscribers
+
+2024-07-28 03:11:42,504 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 03:11:42,504 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 03:11:42,607 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 03:11:42,625 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 03:11:42,678 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 03:11:44,987 INFO Client connection 1722107327920_192.168.65.1_49811 disconnect, remove instances and subscribers
+
+2024-07-28 03:11:45,463 INFO Client connection 1722107332080_192.168.65.1_49812 disconnect, remove instances and subscribers
+
+2024-07-28 03:11:45,472 INFO Client connection 1722107333182_192.168.65.1_49814 disconnect, remove instances and subscribers
+
+2024-07-28 03:11:59,245 INFO Client connection 1722107519224_192.168.65.1_49816 connect
+
+2024-07-28 03:11:59,952 INFO Client connection 1722107519942_192.168.65.1_49817 connect
+
+2024-07-28 03:12:52,490 INFO Client connection 1722107519942_192.168.65.1_49817 disconnect, remove instances and subscribers
+
+2024-07-28 03:12:52,491 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 03:12:52,491 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 03:12:52,544 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 03:12:52,546 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 03:12:52,573 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 03:12:54,944 INFO Client connection 1722107515734_192.168.65.1_49815 disconnect, remove instances and subscribers
+
+2024-07-28 03:12:55,581 INFO Client connection 1722107520053_192.168.65.1_49818 disconnect, remove instances and subscribers
+
+2024-07-28 03:12:55,589 INFO Client connection 1722107519224_192.168.65.1_49816 disconnect, remove instances and subscribers
+
+2024-07-28 03:13:21,488 INFO Client connection 1722106525286_192.168.65.1_49792 disconnect, remove instances and subscribers
+
+2024-07-28 03:13:21,512 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=3}, 1722106525551_192.168.65.1_49793
+
+2024-07-28 03:13:21,559 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=3}, 1722106525551_192.168.65.1_49793
+
+2024-07-28 03:13:21,587 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=3}, 1722106525551_192.168.65.1_49793
+
+2024-07-28 03:13:24,619 INFO Client connection 1722106514038_192.168.65.1_49779 disconnect, remove instances and subscribers
+
+2024-07-28 03:13:24,622 INFO Client connection 1722104697700_192.168.65.1_49729 disconnect, remove instances and subscribers
+
+2024-07-28 03:13:24,626 INFO Client connection 1722106525551_192.168.65.1_49793 disconnect, remove instances and subscribers
+
+2024-07-28 03:13:24,628 INFO Client connection 1722104697473_192.168.65.1_49728 disconnect, remove instances and subscribers
+
+2024-07-28 03:13:24,629 INFO Client connection 1722106525660_192.168.65.1_49794 disconnect, remove instances and subscribers
+
+2024-07-28 03:15:02,915 WARN namespace : public, [DEFAULT_GROUP@@openapi-platform-web] services are automatically cleaned
+
+2024-07-28 03:15:02,940 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.AuthService::] services are automatically cleaned
+
+2024-07-28 03:15:02,942 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.ApiInfoService::] services are automatically cleaned
+
+2024-07-28 03:15:02,945 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.InvokeService::] services are automatically cleaned
+
+2024-07-28 13:51:55,635 INFO Client connection 1722145915613_192.168.65.1_49890 connect
+
+2024-07-28 13:51:55,897 INFO Client connection 1722145915845_192.168.65.1_49891 connect
+
+2024-07-28 13:51:56,023 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}, 1722145915845_192.168.65.1_49891
+
+2024-07-28 13:51:56,660 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}, 1722145915845_192.168.65.1_49891
+
+2024-07-28 13:51:57,190 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}, 1722145915845_192.168.65.1_49891
+
+2024-07-28 13:51:57,876 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=0}, 1722145915613_192.168.65.1_49890
+
+2024-07-28 13:52:07,022 INFO Client connection 1722145926973_192.168.65.1_49894 connect
+
+2024-07-28 13:52:07,842 INFO Client connection 1722145927796_192.168.65.1_49895 connect
+
+2024-07-28 13:54:08,961 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, 1722145915845_192.168.65.1_49891
+
+2024-07-28 13:54:08,994 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, 1722145915845_192.168.65.1_49891
+
+2024-07-28 13:54:09,010 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, 1722145915845_192.168.65.1_49891
+
+2024-07-28 13:54:09,234 INFO Client connection 1722145915613_192.168.65.1_49890 disconnect, remove instances and subscribers
+
+2024-07-28 13:54:23,770 INFO Client connection 1722145909836_192.168.65.1_49879 disconnect, remove instances and subscribers
+
+2024-07-28 13:54:38,847 INFO Client connection 1722146078800_192.168.65.1_49908 connect
+
+2024-07-28 13:54:38,964 INFO Client connection 1722146078954_192.168.65.1_49909 connect
+
+2024-07-28 13:54:38,976 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=2}, 1722146078954_192.168.65.1_49909
+
+2024-07-28 13:54:39,402 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=2}, 1722146078954_192.168.65.1_49909
+
+2024-07-28 13:54:39,683 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=2}, 1722146078954_192.168.65.1_49909
+
+2024-07-28 13:54:40,000 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=2}, 1722146078800_192.168.65.1_49908
+
+2024-07-28 13:54:40,046 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=3}, 1722146078954_192.168.65.1_49909
+
+2024-07-28 13:54:40,065 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=3}, 1722146078954_192.168.65.1_49909
+
+2024-07-28 13:54:40,077 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=3}, 1722146078954_192.168.65.1_49909
+
+2024-07-28 13:54:40,109 INFO Client connection 1722146078800_192.168.65.1_49908 disconnect, remove instances and subscribers
+
+2024-07-28 13:54:42,209 INFO Client connection 1722146076366_192.168.65.1_49897 disconnect, remove instances and subscribers
+
+2024-07-28 13:54:46,713 INFO Client connection 1722146086677_192.168.65.1_49922 connect
+
+2024-07-28 13:54:46,813 INFO Client connection 1722146086801_192.168.65.1_49923 connect
+
+2024-07-28 13:54:46,825 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=4}, 1722146086801_192.168.65.1_49923
+
+2024-07-28 13:54:47,043 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=4}, 1722146086801_192.168.65.1_49923
+
+2024-07-28 13:54:47,141 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=4}, 1722146086801_192.168.65.1_49923
+
+2024-07-28 13:54:47,262 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=4}, 1722146086677_192.168.65.1_49922
+
+2024-07-28 13:56:50,988 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=5}, 1722146086801_192.168.65.1_49923
+
+2024-07-28 13:56:51,040 INFO Client connection 1722146086677_192.168.65.1_49922 disconnect, remove instances and subscribers
+
+2024-07-28 13:56:51,089 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=5}, 1722146086801_192.168.65.1_49923
+
+2024-07-28 13:56:51,107 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=5}, 1722146086801_192.168.65.1_49923
+
+2024-07-28 13:57:03,296 INFO Client connection 1722146085220_192.168.65.1_49911 disconnect, remove instances and subscribers
+
+2024-07-28 13:57:03,731 INFO Client connection 1722145915845_192.168.65.1_49891 disconnect, remove instances and subscribers
+
+2024-07-28 13:57:03,733 INFO Client connection 1722145916146_192.168.65.1_49892 disconnect, remove instances and subscribers
+
+2024-07-28 13:57:03,735 INFO Client connection 1722146086884_192.168.65.1_49924 disconnect, remove instances and subscribers
+
+2024-07-28 13:57:03,736 INFO Client connection 1722146086801_192.168.65.1_49923 disconnect, remove instances and subscribers
+
+2024-07-28 13:57:03,766 INFO Client connection 1722146079042_192.168.65.1_49910 disconnect, remove instances and subscribers
+
+2024-07-28 13:57:03,772 INFO Client connection 1722146078954_192.168.65.1_49909 disconnect, remove instances and subscribers
+
+2024-07-28 13:57:15,572 INFO Client connection 1722146235553_192.168.65.1_49936 connect
+
+2024-07-28 13:57:15,732 INFO Client connection 1722146235716_192.168.65.1_49937 connect
+
+2024-07-28 13:57:15,781 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=6}, 1722146235716_192.168.65.1_49937
+
+2024-07-28 13:57:16,254 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=6}, 1722146235716_192.168.65.1_49937
+
+2024-07-28 13:57:16,606 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=6}, 1722146235716_192.168.65.1_49937
+
+2024-07-28 13:57:17,235 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=6}, 1722146235553_192.168.65.1_49936
+
+2024-07-28 14:03:43,520 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:03:43,520 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:03:43,523 INFO Client connection 1722145927796_192.168.65.1_49895 disconnect, remove instances and subscribers
+
+2024-07-28 14:03:43,552 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:03:43,559 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:03:43,560 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:03:43,562 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:03:45,749 INFO Client connection 1722145922693_192.168.65.1_49893 disconnect, remove instances and subscribers
+
+2024-07-28 14:03:46,220 INFO Client connection 1722145926973_192.168.65.1_49894 disconnect, remove instances and subscribers
+
+2024-07-28 14:03:46,226 INFO Client connection 1722145927903_192.168.65.1_49896 disconnect, remove instances and subscribers
+
+2024-07-28 14:04:00,333 INFO Client connection 1722146640304_192.168.65.1_49952 connect
+
+2024-07-28 14:04:01,055 INFO Client connection 1722146641031_192.168.65.1_49953 connect
+
+2024-07-28 14:11:35,698 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=7}, 1722146235716_192.168.65.1_49937
+
+2024-07-28 14:11:35,708 INFO Client connection 1722146235553_192.168.65.1_49936 disconnect, remove instances and subscribers
+
+2024-07-28 14:11:35,743 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=7}, 1722146235716_192.168.65.1_49937
+
+2024-07-28 14:11:35,765 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=7}, 1722146235716_192.168.65.1_49937
+
+2024-07-28 14:11:48,009 INFO Client connection 1722146229714_192.168.65.1_49925 disconnect, remove instances and subscribers
+
+2024-07-28 14:11:48,417 INFO Client connection 1722146235716_192.168.65.1_49937 disconnect, remove instances and subscribers
+
+2024-07-28 14:11:48,420 INFO Client connection 1722146235871_192.168.65.1_49938 disconnect, remove instances and subscribers
+
+2024-07-28 14:12:01,284 INFO Client connection 1722147121262_192.168.65.1_49968 connect
+
+2024-07-28 14:12:01,432 INFO Client connection 1722147121414_192.168.65.1_49969 connect
+
+2024-07-28 14:12:01,475 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=8}, 1722147121414_192.168.65.1_49969
+
+2024-07-28 14:12:02,041 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=8}, 1722147121414_192.168.65.1_49969
+
+2024-07-28 14:12:02,512 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=8}, 1722147121414_192.168.65.1_49969
+
+2024-07-28 14:12:03,417 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=8}, 1722147121262_192.168.65.1_49968
+
+2024-07-28 14:14:42,408 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=9}, 1722147121414_192.168.65.1_49969
+
+2024-07-28 14:14:42,410 INFO Client connection 1722147121262_192.168.65.1_49968 disconnect, remove instances and subscribers
+
+2024-07-28 14:14:42,425 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=9}, 1722147121414_192.168.65.1_49969
+
+2024-07-28 14:14:42,438 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=9}, 1722147121414_192.168.65.1_49969
+
+2024-07-28 14:14:50,047 INFO Client connection 1722147121607_192.168.65.1_49970 disconnect, remove instances and subscribers
+
+2024-07-28 14:14:50,050 INFO Client connection 1722147121414_192.168.65.1_49969 disconnect, remove instances and subscribers
+
+2024-07-28 14:14:50,053 INFO Client connection 1722147115999_192.168.65.1_49957 disconnect, remove instances and subscribers
+
+2024-07-28 14:15:01,484 INFO Client connection 1722147301467_192.168.65.1_49982 connect
+
+2024-07-28 14:15:01,627 INFO Client connection 1722147301607_192.168.65.1_49983 connect
+
+2024-07-28 14:15:01,657 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=10}, 1722147301607_192.168.65.1_49983
+
+2024-07-28 14:15:02,123 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=10}, 1722147301607_192.168.65.1_49983
+
+2024-07-28 14:15:02,497 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=10}, 1722147301607_192.168.65.1_49983
+
+2024-07-28 14:15:03,012 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=10}, 1722147301467_192.168.65.1_49982
+
+2024-07-28 14:19:20,730 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=11}, 1722147301607_192.168.65.1_49983
+
+2024-07-28 14:19:20,821 INFO Client connection 1722147301467_192.168.65.1_49982 disconnect, remove instances and subscribers
+
+2024-07-28 14:19:20,880 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=11}, 1722147301607_192.168.65.1_49983
+
+2024-07-28 14:19:20,952 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=11}, 1722147301607_192.168.65.1_49983
+
+2024-07-28 14:19:33,316 INFO Client connection 1722147296130_192.168.65.1_49971 disconnect, remove instances and subscribers
+
+2024-07-28 14:19:33,715 INFO Client connection 1722147301607_192.168.65.1_49983 disconnect, remove instances and subscribers
+
+2024-07-28 14:19:33,722 INFO Client connection 1722147301747_192.168.65.1_49984 disconnect, remove instances and subscribers
+
+2024-07-28 14:19:53,813 INFO Client connection 1722147593788_192.168.65.1_50008 connect
+
+2024-07-28 14:19:53,960 INFO Client connection 1722147593928_192.168.65.1_50009 connect
+
+2024-07-28 14:19:54,002 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=12}, 1722147593928_192.168.65.1_50009
+
+2024-07-28 14:19:54,647 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=12}, 1722147593928_192.168.65.1_50009
+
+2024-07-28 14:19:54,997 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=12}, 1722147593928_192.168.65.1_50009
+
+2024-07-28 14:19:55,406 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=12}, 1722147593788_192.168.65.1_50008
+
+2024-07-28 14:21:55,458 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=13}, 1722147593928_192.168.65.1_50009
+
+2024-07-28 14:21:55,478 INFO Client connection 1722147593788_192.168.65.1_50008 disconnect, remove instances and subscribers
+
+2024-07-28 14:21:55,479 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=13}, 1722147593928_192.168.65.1_50009
+
+2024-07-28 14:21:55,493 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=13}, 1722147593928_192.168.65.1_50009
+
+2024-07-28 14:22:07,767 INFO Client connection 1722147587753_192.168.65.1_49997 disconnect, remove instances and subscribers
+
+2024-07-28 14:22:08,187 INFO Client connection 1722147593928_192.168.65.1_50009 disconnect, remove instances and subscribers
+
+2024-07-28 14:22:08,190 INFO Client connection 1722147594241_192.168.65.1_50010 disconnect, remove instances and subscribers
+
+2024-07-28 14:22:24,595 INFO Client connection 1722147744568_192.168.65.1_50022 connect
+
+2024-07-28 14:22:24,757 INFO Client connection 1722147744741_192.168.65.1_50023 connect
+
+2024-07-28 14:22:24,788 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=14}, 1722147744741_192.168.65.1_50023
+
+2024-07-28 14:22:25,249 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=14}, 1722147744741_192.168.65.1_50023
+
+2024-07-28 14:22:25,612 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=14}, 1722147744741_192.168.65.1_50023
+
+2024-07-28 14:22:26,070 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=14}, 1722147744568_192.168.65.1_50022
+
+2024-07-28 14:29:35,289 INFO Client connection 1722146641031_192.168.65.1_49953 disconnect, remove instances and subscribers
+
+2024-07-28 14:29:35,469 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:29:35,469 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:29:35,505 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:29:35,519 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:29:35,543 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:29:38,926 INFO Client connection 1722146636523_192.168.65.1_49951 disconnect, remove instances and subscribers
+
+2024-07-28 14:29:39,170 INFO Client connection 1722146640304_192.168.65.1_49952 disconnect, remove instances and subscribers
+
+2024-07-28 14:29:39,173 INFO Client connection 1722146641162_192.168.65.1_49954 disconnect, remove instances and subscribers
+
+2024-07-28 14:30:05,193 INFO Client connection 1722148205172_192.168.65.1_50026 connect
+
+2024-07-28 14:30:05,997 INFO Client connection 1722148205979_192.168.65.1_50027 connect
+
+2024-07-28 14:33:13,616 INFO Client connection 1722148205979_192.168.65.1_50027 disconnect, remove instances and subscribers
+
+2024-07-28 14:33:13,627 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:33:13,627 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:33:13,751 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:33:13,793 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:33:13,793 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:33:13,854 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:33:16,103 INFO Client connection 1722148201010_192.168.65.1_50025 disconnect, remove instances and subscribers
+
+2024-07-28 14:33:16,594 INFO Client connection 1722148205172_192.168.65.1_50026 disconnect, remove instances and subscribers
+
+2024-07-28 14:33:16,597 INFO Client connection 1722148206150_192.168.65.1_50028 disconnect, remove instances and subscribers
+
+2024-07-28 14:33:29,283 INFO Client connection 1722148409242_192.168.65.1_50042 connect
+
+2024-07-28 14:33:30,187 INFO Client connection 1722148410162_192.168.65.1_50043 connect
+
+2024-07-28 14:34:59,540 INFO Client connection 1722148410162_192.168.65.1_50043 disconnect, remove instances and subscribers
+
+2024-07-28 14:34:59,540 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:34:59,540 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:34:59,642 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:34:59,703 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:34:59,703 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:34:59,759 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:35:02,102 INFO Client connection 1722148406302_192.168.65.1_50041 disconnect, remove instances and subscribers
+
+2024-07-28 14:35:02,529 INFO Client connection 1722148409242_192.168.65.1_50042 disconnect, remove instances and subscribers
+
+2024-07-28 14:35:02,532 INFO Client connection 1722148410410_192.168.65.1_50044 disconnect, remove instances and subscribers
+
+2024-07-28 14:35:17,747 INFO Client connection 1722148517719_192.168.65.1_50046 connect
+
+2024-07-28 14:35:18,656 INFO Client connection 1722148518621_192.168.65.1_50047 connect
+
+2024-07-28 14:37:15,852 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:37:15,852 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:37:15,891 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:37:15,894 INFO Client connection 1722148518621_192.168.65.1_50047 disconnect, remove instances and subscribers
+
+2024-07-28 14:37:15,905 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:37:15,936 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:37:18,234 INFO Client connection 1722148514289_192.168.65.1_50045 disconnect, remove instances and subscribers
+
+2024-07-28 14:37:18,871 INFO Client connection 1722148519045_192.168.65.1_50048 disconnect, remove instances and subscribers
+
+2024-07-28 14:37:18,874 INFO Client connection 1722148517719_192.168.65.1_50046 disconnect, remove instances and subscribers
+
+2024-07-28 14:37:34,958 INFO Client connection 1722148654916_192.168.65.1_50050 connect
+
+2024-07-28 14:37:35,618 INFO Client connection 1722148655604_192.168.65.1_50051 connect
+
+2024-07-28 14:45:46,455 INFO Client connection 1722148655604_192.168.65.1_50051 disconnect, remove instances and subscribers
+
+2024-07-28 14:45:46,468 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:45:46,468 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:45:46,652 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 14:45:46,682 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 14:45:46,682 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:45:46,699 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 14:45:52,549 INFO Client connection 1722148651263_192.168.65.1_50049 disconnect, remove instances and subscribers
+
+2024-07-28 14:45:53,124 INFO Client connection 1722148656236_192.168.65.1_50052 disconnect, remove instances and subscribers
+
+2024-07-28 14:45:53,128 INFO Client connection 1722148654916_192.168.65.1_50050 disconnect, remove instances and subscribers
+
+2024-07-28 14:46:15,201 INFO Client connection 1722149175176_192.168.65.1_50066 connect
+
+2024-07-28 14:46:16,346 INFO Client connection 1722149176332_192.168.65.1_50067 connect
+
+2024-07-28 15:00:51,398 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 15:00:51,398 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 15:00:51,409 INFO Client connection 1722149176332_192.168.65.1_50067 disconnect, remove instances and subscribers
+
+2024-07-28 15:00:51,473 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 15:00:51,502 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 15:00:51,504 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 15:00:53,553 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 15:00:55,846 INFO Client connection 1722149172317_192.168.65.1_50065 disconnect, remove instances and subscribers
+
+2024-07-28 15:00:56,511 INFO Client connection 1722149176492_192.168.65.1_50068 disconnect, remove instances and subscribers
+
+2024-07-28 15:00:56,514 INFO Client connection 1722149175176_192.168.65.1_50066 disconnect, remove instances and subscribers
+
+2024-07-28 15:01:10,414 INFO Client connection 1722147744568_192.168.65.1_50022 disconnect, remove instances and subscribers
+
+2024-07-28 15:01:10,560 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=15}, 1722147744741_192.168.65.1_50023
+
+2024-07-28 15:01:10,638 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=15}, 1722147744741_192.168.65.1_50023
+
+2024-07-28 15:01:10,667 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=15}, 1722147744741_192.168.65.1_50023
+
+2024-07-28 15:01:13,410 INFO Client connection 1722147744859_192.168.65.1_50024 disconnect, remove instances and subscribers
+
+2024-07-28 15:01:13,414 INFO Client connection 1722147744741_192.168.65.1_50023 disconnect, remove instances and subscribers
+
+2024-07-28 15:01:13,481 INFO Client connection 1722147739436_192.168.65.1_50011 disconnect, remove instances and subscribers
+
+2024-07-28 15:02:49,510 WARN namespace : public, [DEFAULT_GROUP@@openapi-platform-web] services are automatically cleaned
+
+2024-07-28 15:02:49,523 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.AuthService::] services are automatically cleaned
+
+2024-07-28 15:02:49,524 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.ApiInfoService::] services are automatically cleaned
+
+2024-07-28 15:02:49,525 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.InvokeService::] services are automatically cleaned
+
+2024-07-28 16:16:16,907 INFO Client connection 1722154576839_192.168.65.1_50163 connect
+
+2024-07-28 16:16:17,242 INFO Client connection 1722154577208_192.168.65.1_50164 connect
+
+2024-07-28 16:16:17,359 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}, 1722154577208_192.168.65.1_50164
+
+2024-07-28 16:16:18,500 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}, 1722154577208_192.168.65.1_50164
+
+2024-07-28 16:16:19,075 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}, 1722154577208_192.168.65.1_50164
+
+2024-07-28 16:16:20,005 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=0}, 1722154576839_192.168.65.1_50163
+
+2024-07-28 16:16:23,080 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, 1722154577208_192.168.65.1_50164
+
+2024-07-28 16:16:23,091 INFO Client connection 1722154576839_192.168.65.1_50163 disconnect, remove instances and subscribers
+
+2024-07-28 16:16:23,107 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, 1722154577208_192.168.65.1_50164
+
+2024-07-28 16:16:23,120 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, 1722154577208_192.168.65.1_50164
+
+2024-07-28 16:16:25,720 INFO Client connection 1722154566817_192.168.65.1_50152 disconnect, remove instances and subscribers
+
+2024-07-28 16:16:25,725 INFO Client connection 1722154577755_192.168.65.1_50165 disconnect, remove instances and subscribers
+
+2024-07-28 16:16:25,725 INFO Client connection 1722154577208_192.168.65.1_50164 disconnect, remove instances and subscribers
+
+2024-07-28 16:17:47,909 WARN namespace : public, [DEFAULT_GROUP@@openapi-platform-web] services are automatically cleaned
+
+2024-07-28 16:17:47,915 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.AuthService::] services are automatically cleaned
+
+2024-07-28 16:17:47,916 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.ApiInfoService::] services are automatically cleaned
+
+2024-07-28 16:17:47,917 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.InvokeService::] services are automatically cleaned
+
+2024-07-28 17:06:01,502 INFO Client connection 1722157561465_192.168.65.1_50203 connect
+
+2024-07-28 17:06:02,019 INFO Client connection 1722157562002_192.168.65.1_50204 connect
+
+2024-07-28 17:06:02,406 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:06:03,677 INFO Client connection 1722157562002_192.168.65.1_50204 disconnect, remove instances and subscribers
+
+2024-07-28 17:06:05,809 INFO Client connection 1722157556900_192.168.65.1_50202 disconnect, remove instances and subscribers
+
+2024-07-28 17:06:09,328 INFO Client connection 1722157561465_192.168.65.1_50203 disconnect, remove instances and subscribers
+
+2024-07-28 17:06:09,331 INFO Client connection 1722157562146_192.168.65.1_50205 disconnect, remove instances and subscribers
+
+2024-07-28 17:06:52,166 INFO Client connection 1722157612145_192.168.65.1_50217 connect
+
+2024-07-28 17:06:52,310 INFO Client connection 1722157612297_192.168.65.1_50218 connect
+
+2024-07-28 17:06:52,353 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}, 1722157612297_192.168.65.1_50218
+
+2024-07-28 17:06:52,919 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}, 1722157612297_192.168.65.1_50218
+
+2024-07-28 17:06:53,296 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}, 1722157612297_192.168.65.1_50218
+
+2024-07-28 17:06:53,773 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=0}, 1722157612145_192.168.65.1_50217
+
+2024-07-28 17:07:22,488 INFO Client connection 1722157642457_192.168.65.1_50221 connect
+
+2024-07-28 17:07:23,735 INFO Client connection 1722157643707_192.168.65.1_50222 connect
+
+2024-07-28 17:40:20,898 INFO Client connection 1722157643707_192.168.65.1_50222 disconnect, remove instances and subscribers
+
+2024-07-28 17:40:20,957 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:40:20,957 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:40:21,057 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:40:21,106 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:40:21,160 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:40:21,239 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:40:23,449 INFO Client connection 1722157633739_192.168.65.1_50220 disconnect, remove instances and subscribers
+
+2024-07-28 17:40:24,035 INFO Client connection 1722157644071_192.168.65.1_50223 disconnect, remove instances and subscribers
+
+2024-07-28 17:40:24,038 INFO Client connection 1722157642457_192.168.65.1_50221 disconnect, remove instances and subscribers
+
+2024-07-28 17:40:40,805 INFO Client connection 1722159640773_192.168.65.1_50267 connect
+
+2024-07-28 17:40:41,624 INFO Client connection 1722159641599_192.168.65.1_50268 connect
+
+2024-07-28 17:45:39,443 INFO Client connection 1722159641599_192.168.65.1_50268 disconnect, remove instances and subscribers
+
+2024-07-28 17:45:39,542 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:45:39,542 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:45:39,661 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:45:39,695 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:45:39,704 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:45:39,745 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:45:42,163 INFO Client connection 1722159636178_192.168.65.1_50266 disconnect, remove instances and subscribers
+
+2024-07-28 17:45:42,557 INFO Client connection 1722159640773_192.168.65.1_50267 disconnect, remove instances and subscribers
+
+2024-07-28 17:45:42,560 INFO Client connection 1722159641908_192.168.65.1_50269 disconnect, remove instances and subscribers
+
+2024-07-28 17:45:58,658 INFO Client connection 1722159958641_192.168.65.1_50283 connect
+
+2024-07-28 17:45:59,654 INFO Client connection 1722159959644_192.168.65.1_50284 connect
+
+2024-07-28 17:47:29,354 INFO Client connection 1722159959644_192.168.65.1_50284 disconnect, remove instances and subscribers
+
+2024-07-28 17:47:29,392 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:47:29,393 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:47:29,528 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:47:29,667 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:47:29,755 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:47:31,842 INFO Client connection 1722159954250_192.168.65.1_50282 disconnect, remove instances and subscribers
+
+2024-07-28 17:47:32,537 INFO Client connection 1722159959985_192.168.65.1_50285 disconnect, remove instances and subscribers
+
+2024-07-28 17:47:32,541 INFO Client connection 1722159958641_192.168.65.1_50283 disconnect, remove instances and subscribers
+
+2024-07-28 17:47:48,540 INFO Client connection 1722160068526_192.168.65.1_50287 connect
+
+2024-07-28 17:47:49,212 INFO Client connection 1722160069198_192.168.65.1_50288 connect
+
+2024-07-28 17:50:25,370 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:50:25,378 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:50:25,358 INFO Client connection 1722160069198_192.168.65.1_50288 disconnect, remove instances and subscribers
+
+2024-07-28 17:50:25,601 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:50:25,676 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:50:25,738 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:50:27,990 INFO Client connection 1722160064465_192.168.65.1_50286 disconnect, remove instances and subscribers
+
+2024-07-28 17:50:29,151 INFO Client connection 1722160068526_192.168.65.1_50287 disconnect, remove instances and subscribers
+
+2024-07-28 17:50:29,161 INFO Client connection 1722160069381_192.168.65.1_50289 disconnect, remove instances and subscribers
+
+2024-07-28 17:50:45,322 INFO Client connection 1722160245300_192.168.65.1_50291 connect
+
+2024-07-28 17:50:46,705 INFO Client connection 1722160246685_192.168.65.1_50292 connect
+
+2024-07-28 17:55:33,514 INFO Client connection 1722160246685_192.168.65.1_50292 disconnect, remove instances and subscribers
+
+2024-07-28 17:55:33,532 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:55:33,534 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:55:33,647 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:55:33,647 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:55:33,683 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:55:33,690 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:55:36,018 INFO Client connection 1722160241220_192.168.65.1_50290 disconnect, remove instances and subscribers
+
+2024-07-28 17:55:36,548 INFO Client connection 1722160247319_192.168.65.1_50293 disconnect, remove instances and subscribers
+
+2024-07-28 17:55:36,549 INFO Client connection 1722160245300_192.168.65.1_50291 disconnect, remove instances and subscribers
+
+2024-07-28 17:55:53,433 INFO Client connection 1722160553411_192.168.65.1_50295 connect
+
+2024-07-28 17:55:54,493 INFO Client connection 1722160554478_192.168.65.1_50296 connect
+
+2024-07-28 17:58:21,738 INFO Client connection 1722160554478_192.168.65.1_50296 disconnect, remove instances and subscribers
+
+2024-07-28 17:58:21,708 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:58:21,708 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 17:58:21,855 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:58:21,953 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 17:58:22,019 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 17:58:24,514 INFO Client connection 1722160549337_192.168.65.1_50294 disconnect, remove instances and subscribers
+
+2024-07-28 17:58:25,258 INFO Client connection 1722160553411_192.168.65.1_50295 disconnect, remove instances and subscribers
+
+2024-07-28 17:58:25,265 INFO Client connection 1722160554708_192.168.65.1_50297 disconnect, remove instances and subscribers
+
+2024-07-28 17:58:41,816 INFO Client connection 1722160721772_192.168.65.1_50299 connect
+
+2024-07-28 17:58:42,962 INFO Client connection 1722160722924_192.168.65.1_50300 connect
+
+2024-07-28 18:04:19,214 INFO Client connection 1722160722924_192.168.65.1_50300 disconnect, remove instances and subscribers
+
+2024-07-28 18:04:19,217 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 18:04:19,217 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 18:04:19,269 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 18:04:19,332 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 18:04:19,336 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 18:04:19,394 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 18:04:21,630 INFO Client connection 1722160717623_192.168.65.1_50298 disconnect, remove instances and subscribers
+
+2024-07-28 18:04:22,141 INFO Client connection 1722160721772_192.168.65.1_50299 disconnect, remove instances and subscribers
+
+2024-07-28 18:04:22,146 INFO Client connection 1722160723332_192.168.65.1_50301 disconnect, remove instances and subscribers
+
+2024-07-28 18:04:40,025 INFO Client connection 1722161079995_192.168.65.1_50315 connect
+
+2024-07-28 18:04:40,923 INFO Client connection 1722161080914_192.168.65.1_50316 connect
+
+2024-07-28 18:06:40,559 INFO Client connection 1722161080914_192.168.65.1_50316 disconnect, remove instances and subscribers
+
+2024-07-28 18:06:40,687 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 18:06:40,687 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 18:06:40,781 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 18:06:40,905 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 18:06:40,945 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 18:06:44,183 INFO Client connection 1722161075428_192.168.65.1_50314 disconnect, remove instances and subscribers
+
+2024-07-28 18:06:44,197 INFO Client connection 1722161081221_192.168.65.1_50317 disconnect, remove instances and subscribers
+
+2024-07-28 18:06:44,200 INFO Client connection 1722161079995_192.168.65.1_50315 disconnect, remove instances and subscribers
+
+2024-07-28 18:07:19,376 INFO Client connection 1722161239342_192.168.65.1_50329 connect
+
+2024-07-28 18:07:20,474 INFO Client connection 1722161240460_192.168.65.1_50330 connect
+
+2024-07-28 18:12:35,145 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 18:12:35,145 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 18:12:35,153 INFO Client connection 1722161240460_192.168.65.1_50330 disconnect, remove instances and subscribers
+
+2024-07-28 18:12:35,193 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 18:12:35,232 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 18:12:35,258 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 18:12:37,462 INFO Client connection 1722161233872_192.168.65.1_50328 disconnect, remove instances and subscribers
+
+2024-07-28 18:12:38,159 INFO Client connection 1722161239342_192.168.65.1_50329 disconnect, remove instances and subscribers
+
+2024-07-28 18:12:38,162 INFO Client connection 1722161240601_192.168.65.1_50331 disconnect, remove instances and subscribers
+
+2024-07-28 18:13:00,152 INFO Client connection 1722161580072_192.168.65.1_50333 connect
+
+2024-07-28 18:13:01,734 INFO Client connection 1722161581706_192.168.65.1_50334 connect
+
+2024-07-28 18:17:35,282 INFO Client connection 1722161581706_192.168.65.1_50334 disconnect, remove instances and subscribers
+
+2024-07-28 18:17:35,410 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 18:17:35,478 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 18:17:35,598 INFO Client connection 1722157612145_192.168.65.1_50217 disconnect, remove instances and subscribers
+
+2024-07-28 18:17:35,625 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-28 18:17:35,731 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 18:17:35,748 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-28 18:17:35,814 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-28 18:17:36,238 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, 1722157612297_192.168.65.1_50218
+
+2024-07-28 18:17:36,252 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=2}, 1722157612297_192.168.65.1_50218
+
+2024-07-28 18:17:36,678 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, 1722157612297_192.168.65.1_50218
+
+2024-07-28 18:17:36,781 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, 1722157612297_192.168.65.1_50218
+
+2024-07-28 18:17:38,310 INFO Client connection 1722161574475_192.168.65.1_50332 disconnect, remove instances and subscribers
+
+2024-07-28 18:17:40,271 INFO Client connection 1722161580072_192.168.65.1_50333 disconnect, remove instances and subscribers
+
+2024-07-28 18:17:40,324 INFO Client connection 1722161581927_192.168.65.1_50335 disconnect, remove instances and subscribers
+
+2024-07-28 18:17:40,479 INFO Client connection 1722157612297_192.168.65.1_50218 disconnect, remove instances and subscribers
+
+2024-07-28 18:17:40,491 INFO Client connection 1722157612489_192.168.65.1_50219 disconnect, remove instances and subscribers
+
+2024-07-28 18:17:40,535 INFO Client connection 1722157606707_192.168.65.1_50206 disconnect, remove instances and subscribers
+
+2024-07-28 18:18:50,945 WARN namespace : public, [DEFAULT_GROUP@@openapi-platform-web] services are automatically cleaned
+
+2024-07-28 18:18:50,950 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.AuthService::] services are automatically cleaned
+
+2024-07-28 18:18:50,951 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.ApiInfoService::] services are automatically cleaned
+
+2024-07-28 18:18:50,952 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.InvokeService::] services are automatically cleaned
+

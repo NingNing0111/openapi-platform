@@ -1,0 +1,56 @@
+2024-07-27 21:10:49,945 INFO Initializes the Raft protocol, raft-config info : {"data":{},"members":["a912253cd926:7848"],"selfMember":"a912253cd926:7848"}
+
+2024-07-27 21:10:51,225 INFO ========= The raft protocol is starting... =========
+
+2024-07-27 21:10:51,336 INFO ========= The raft protocol start finished... =========
+
+2024-07-27 21:10:51,471 INFO create raft group : naming_persistent_service_v2
+
+2024-07-27 21:10:52,857 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='a912253cd926:7848', term=1, raftClusterInfo=[a912253cd926:7848]}
+
+2024-07-27 21:10:52,878 INFO create raft group : naming_instance_metadata
+
+2024-07-27 21:10:53,539 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='a912253cd926:7848', term=1, raftClusterInfo=[a912253cd926:7848]}
+
+2024-07-27 21:10:53,553 INFO create raft group : naming_service_metadata
+
+2024-07-27 21:10:53,970 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='a912253cd926:7848', term=1, raftClusterInfo=[a912253cd926:7848]}
+
+2024-07-27 21:10:54,450 ERROR Failed to join the cluster, retry...
+
+java.lang.IllegalStateException: Fail to get leader of group naming_persistent_service_v2
+	at com.alipay.sofa.jraft.core.CliServiceImpl.getPeers(CliServiceImpl.java:605)
+	at com.alipay.sofa.jraft.core.CliServiceImpl.getPeers(CliServiceImpl.java:498)
+	at com.alibaba.nacos.core.distributed.raft.JRaftServer.registerSelfToCluster(JRaftServer.java:353)
+	at com.alibaba.nacos.core.distributed.raft.JRaftServer.lambda$createMultiRaftGroup$0(JRaftServer.java:264)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-07-27 23:29:51,937 INFO shutdown jraft server
+
+2024-07-27 23:29:52,006 INFO ========= The raft protocol is starting to close =========
+
+2024-07-27 23:29:52,376 INFO ========= The raft protocol has been closed =========
+
+2024-07-27 23:30:28,419 INFO Initializes the Raft protocol, raft-config info : {"data":{},"members":["6742fb8be8e0:7848"],"selfMember":"6742fb8be8e0:7848"}
+
+2024-07-27 23:30:28,709 INFO ========= The raft protocol is starting... =========
+
+2024-07-27 23:30:28,728 INFO ========= The raft protocol start finished... =========
+
+2024-07-27 23:30:28,742 INFO create raft group : naming_persistent_service_v2
+
+2024-07-27 23:30:29,254 INFO create raft group : naming_instance_metadata
+
+2024-07-27 23:30:29,256 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='6742fb8be8e0:7848', term=1, raftClusterInfo=[6742fb8be8e0:7848]}
+
+2024-07-27 23:30:29,590 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='6742fb8be8e0:7848', term=1, raftClusterInfo=[6742fb8be8e0:7848]}
+
+2024-07-27 23:30:29,599 INFO create raft group : naming_service_metadata
+
+2024-07-27 23:30:29,721 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='6742fb8be8e0:7848', term=1, raftClusterInfo=[6742fb8be8e0:7848]}
+
