@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2024/7/29 11:46
  */
 @RestController
-@RequestMapping("/weather")
+@RequestMapping("/dailyLife")
 @RequiredArgsConstructor
 @Slf4j
-public class WeatherController {
+public class DailyLifeController {
 
     private final WeatherService weatherService;
 
-    @GetMapping("/getWeather/{city}")
+    @GetMapping("/weather/getWeather/{city}")
     public BaseResponse getWeather(@PathVariable String city){
         return weatherService.getWeather(city);
     }

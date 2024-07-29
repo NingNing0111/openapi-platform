@@ -1,9 +1,11 @@
-package me.pgthinker.provider.service.impl;
+package me.pgthinker.provider.service.impl.dailyLife;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.RequiredArgsConstructor;
 import me.pgthinker.common.BaseResponse;
 import me.pgthinker.common.ResultUtils;
+import me.pgthinker.provider.constant.RemoteAPI;
 import me.pgthinker.provider.service.WeatherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -15,10 +17,13 @@ import org.springframework.web.client.RestTemplate;
  * @date 2024/7/29 11:55
  */
 @Service
+@RequiredArgsConstructor
 public class WeatherServiceImpl implements WeatherService {
+
+    private final RestTemplate restTemplate;
+
     @Override
     public BaseResponse getWeather(String city) {
-        RestTemplate restTemplate = new RestTemplate();
         String startToken = "var city_data = ";
         String resToken = "var dataSK=";
         try{
@@ -30,7 +35,7 @@ public class WeatherServiceImpl implements WeatherService {
             JsonNode node = objectMapper.readTree(cityDataJson);
             String id = findIdByName(node,city);
 
-            String url = "http://d1.weather.com.cn/sk_2d/101270101.html?_=" + id;
+            String url = RemoteAPI.CITY_ID + id;
             ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
             String result = extractCityDataJson(resToken,response.getBody());
             return ResultUtils.success(result);
@@ -40,8 +45,7 @@ public class WeatherServiceImpl implements WeatherService {
     }
 
     private String getCityId() {
-        RestTemplate restTemplate = new RestTemplate();
-        String url = "https://j.i8tq.com/weather2020/search/city.js";
+        String url = RemoteAPI.CITY_INFO;
         ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
         return response.getBody();
     }
