@@ -24,4 +24,14 @@ public interface RemoteAPI {
      * 参数：无
      */
     String RANDOM_DOG_IMAGE="https://dog.ceo/api/breeds/image/random";
+
+    /**
+     *获取天气
+     */
+    String CITY_ID="http://d1.weather.com.cn/sk_2d/101270101.html?_=";
+
+    /**
+     * 城市信息
+     */
+    String CITY_INFO="https://j.i8tq.com/weather2020/search/city.js";
 }
