@@ -1,0 +1,404 @@
+2024-07-29 00:19:20,848 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 00:20:38,419 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 00:21:26,026 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 03:10:55,533 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 03:12:13,117 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 03:13:00,720 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 03:40:55,481 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 03:42:13,059 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 03:43:00,670 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 04:51:57,816 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 05:08:40,425 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 05:09:28,049 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 08:38:24,691 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 44 ms.
+
+2024-07-29 08:39:42,252 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 13 ms.
+
+2024-07-29 08:40:29,593 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 09:08:24,439 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 7 ms.
+
+2024-07-29 09:09:41,986 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 16 ms.
+
+2024-07-29 09:10:29,556 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 09:38:24,381 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 4 ms.
+
+2024-07-29 09:39:41,927 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 09:40:29,547 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 10:08:24,376 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 6 ms.
+
+2024-07-29 10:09:41,904 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 10:10:29,494 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 10:38:24,328 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 5 ms.
+
+2024-07-29 10:39:41,852 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 10:40:29,457 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 4 ms.
+
+2024-07-29 11:08:24,291 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 11:09:41,812 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 11:10:29,407 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 11:38:24,258 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 5 ms.
+
+2024-07-29 11:39:41,941 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 20 ms.
+
+2024-07-29 11:40:29,411 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 12:41:08,835 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 6 ms.
+
+2024-07-29 12:42:26,384 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 12:43:13,934 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 13:11:08,801 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 6 ms.
+
+2024-07-29 13:12:26,331 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 13:13:13,885 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 13:41:08,825 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 13 ms.
+
+2024-07-29 13:42:26,966 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 436 ms.
+
+2024-07-29 13:43:13,848 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 14:11:08,774 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 4 ms.
+
+2024-07-29 14:12:26,338 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 4 ms.
+
+2024-07-29 14:13:13,804 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 14:41:08,745 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 6 ms.
+
+2024-07-29 14:42:26,357 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 9 ms.
+
+2024-07-29 14:43:13,790 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 15:11:08,737 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 6 ms.
+
+2024-07-29 15:12:26,327 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 15:13:13,748 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 15:41:08,714 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 4 ms.
+
+2024-07-29 15:42:26,268 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 15:43:13,730 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 16:11:08,734 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 5 ms.
+
+2024-07-29 16:12:26,269 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 16:13:13,698 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 16:41:08,724 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 8 ms.
+
+2024-07-29 16:42:26,251 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 16:43:14,136 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 93 ms.
+
+2024-07-29 17:11:08,738 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 4 ms.
+
+2024-07-29 17:12:26,252 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 5 ms.
+
+2024-07-29 17:13:13,745 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 17:41:08,752 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 5 ms.
+
+2024-07-29 17:42:26,690 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 57 ms.
+
+2024-07-29 17:43:14,448 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 20 ms.
+
+2024-07-29 18:11:08,751 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 7 ms.
+
+2024-07-29 18:12:26,422 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 14 ms.
+
+2024-07-29 18:44:53,031 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 19:15:21,399 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 19:16:39,046 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 19:17:26,429 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 0 ms.
+
+2024-07-29 19:45:21,318 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 19:46:38,963 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 0 ms.
+
+2024-07-29 19:47:26,349 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 20:15:21,414 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 6 ms.
+
+2024-07-29 20:16:39,025 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 20:17:26,388 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 20:45:21,434 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 8 ms.
+
+2024-07-29 20:46:39,031 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 5 ms.
+
+2024-07-29 20:47:26,404 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 20:57:37,572 INFO Node <naming_service_metadata/6742fb8be8e0:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-07-29 20:57:37,585 INFO Fail to find the next candidate, group naming_service_metadata.
+
+2024-07-29 20:57:37,587 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-07-29 20:57:37,628 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=6742fb8be8e0:7848, cost time=25 ms
+
+2024-07-29 20:57:37,629 INFO Shutting down FSMCaller...
+
+2024-07-29 20:57:37,633 INFO onShutdown.
+
+2024-07-29 20:57:37,635 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@3f01827e[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-07-29 20:57:37,637 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@675c7fb7[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-07-29 20:57:37,638 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,638 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,639 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,639 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,641 INFO The number of active nodes decrement to 2.
+
+2024-07-29 20:57:37,643 INFO Node <naming_service_metadata/6742fb8be8e0:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-07-29 20:57:37,644 INFO Stop the RaftGroupService successfully.
+
+2024-07-29 20:57:37,644 INFO Node <naming_instance_metadata/6742fb8be8e0:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-07-29 20:57:37,647 INFO Fail to find the next candidate, group naming_instance_metadata.
+
+2024-07-29 20:57:37,650 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-07-29 20:57:37,654 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=6742fb8be8e0:7848, cost time=6 ms
+
+2024-07-29 20:57:37,655 INFO Shutting down FSMCaller...
+
+2024-07-29 20:57:37,656 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@6254225c[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-07-29 20:57:37,656 INFO onShutdown.
+
+2024-07-29 20:57:37,656 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@66714866[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-07-29 20:57:37,657 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,658 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,658 INFO The number of active nodes decrement to 1.
+
+2024-07-29 20:57:37,658 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,659 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,659 INFO Node <naming_instance_metadata/6742fb8be8e0:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-07-29 20:57:37,660 INFO Stop the RaftGroupService successfully.
+
+2024-07-29 20:57:37,661 INFO Node <naming_persistent_service_v2/6742fb8be8e0:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-07-29 20:57:37,663 INFO Fail to find the next candidate, group naming_persistent_service_v2.
+
+2024-07-29 20:57:37,665 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-07-29 20:57:37,673 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=6742fb8be8e0:7848, cost time=8 ms
+
+2024-07-29 20:57:37,674 INFO Shutting down FSMCaller...
+
+2024-07-29 20:57:37,677 INFO onShutdown.
+
+2024-07-29 20:57:37,677 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@5e098d0f[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-07-29 20:57:37,677 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@1d8c1250[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-07-29 20:57:37,677 INFO The number of active nodes decrement to 0.
+
+2024-07-29 20:57:37,684 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@5c49b9be[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-07-29 20:57:37,685 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,690 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@12763a40[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-07-29 20:57:37,691 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,697 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@57edf8e7[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 123492].
+
+2024-07-29 20:57:37,698 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,704 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@16ddffe4[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 171].
+
+2024-07-29 20:57:37,705 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/6742fb8be8e0:7848>'}.
+
+2024-07-29 20:57:37,707 INFO Node <naming_persistent_service_v2/6742fb8be8e0:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-07-29 20:57:37,708 INFO Stop the RaftGroupService successfully.
+
+2024-07-29 20:57:37,712 INFO Shutdown managed channel: 6742fb8be8e0:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=6742fb8be8e0:7848}}.
+
+2024-07-29 20:57:37,732 INFO The channel 6742fb8be8e0:7848 is in state: SHUTDOWN.
+
+2024-07-29 20:57:37,733 WARN This channel 6742fb8be8e0:7848 has started shutting down. Any new RPCs should fail immediately.
+
+2024-07-29 20:57:37,775 INFO DB destroyed, the db path is: /home/nacos/data/protocol/raft/naming_instance_metadata/log.
+
+2024-07-29 20:57:37,775 INFO DB destroyed, the db path is: /home/nacos/data/protocol/raft/naming_service_metadata/log.
+
+2024-07-29 20:57:37,778 INFO DB destroyed, the db path is: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log.
+
+2024-07-29 20:57:37,785 INFO Connection disconnected: /192.168.96.4:53322
+
+2024-07-29 20:57:37,829 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@128731ee[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 85558].
+
+2024-07-29 21:00:21,575 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-07-29 21:00:21,665 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-07-29 21:00:21,786 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-07-29 21:00:21,787 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-07-29 21:00:21,787 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-07-29 21:00:21,789 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-07-29 21:00:21,792 INFO The number of active nodes increment to 1.
+
+2024-07-29 21:00:22,779 INFO Starts FSMCaller successfully.
+
+2024-07-29 21:00:22,788 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-07-29 21:00:22,798 INFO Node <naming_persistent_service_v2/ad82c51882f0:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=ad82c51882f0:7848, oldConf=.
+
+2024-07-29 21:00:22,801 INFO Node <naming_persistent_service_v2/ad82c51882f0:7848> start vote and grant vote self, term=0.
+
+2024-07-29 21:00:22,828 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=ad82c51882f0:7848, cost time=20 ms
+
+2024-07-29 21:00:22,829 INFO Node <naming_persistent_service_v2/ad82c51882f0:7848> become leader of group, term=1, conf=ad82c51882f0:7848, oldConf=.
+
+2024-07-29 21:00:22,833 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-07-29 21:00:22,837 WARN RPC server is not started in RaftGroupService.
+
+2024-07-29 21:00:22,837 INFO Start the RaftGroupService successfully.
+
+2024-07-29 21:00:22,847 INFO onLeaderStart: term=1.
+
+2024-07-29 21:00:22,877 INFO The number of active nodes increment to 2.
+
+2024-07-29 21:00:23,128 INFO Creating new channel to: ad82c51882f0:7848.
+
+2024-07-29 21:00:23,355 INFO The channel ad82c51882f0:7848 is in state: CONNECTING.
+
+2024-07-29 21:00:23,395 INFO Starts FSMCaller successfully.
+
+2024-07-29 21:00:23,397 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-07-29 21:00:23,402 INFO Node <naming_instance_metadata/ad82c51882f0:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=ad82c51882f0:7848, oldConf=.
+
+2024-07-29 21:00:23,404 INFO Node <naming_instance_metadata/ad82c51882f0:7848> start vote and grant vote self, term=0.
+
+2024-07-29 21:00:23,410 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=ad82c51882f0:7848, cost time=4 ms
+
+2024-07-29 21:00:23,410 INFO Node <naming_instance_metadata/ad82c51882f0:7848> become leader of group, term=1, conf=ad82c51882f0:7848, oldConf=.
+
+2024-07-29 21:00:23,411 WARN RPC server is not started in RaftGroupService.
+
+2024-07-29 21:00:23,412 INFO Start the RaftGroupService successfully.
+
+2024-07-29 21:00:23,415 INFO onLeaderStart: term=1.
+
+2024-07-29 21:00:23,444 INFO The number of active nodes increment to 3.
+
+2024-07-29 21:00:23,703 INFO Starts FSMCaller successfully.
+
+2024-07-29 21:00:23,704 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-07-29 21:00:23,705 INFO Node <naming_service_metadata/ad82c51882f0:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=ad82c51882f0:7848, oldConf=.
+
+2024-07-29 21:00:23,706 INFO Node <naming_service_metadata/ad82c51882f0:7848> start vote and grant vote self, term=0.
+
+2024-07-29 21:00:23,710 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=ad82c51882f0:7848, cost time=2 ms
+
+2024-07-29 21:00:23,710 INFO Node <naming_service_metadata/ad82c51882f0:7848> become leader of group, term=1, conf=ad82c51882f0:7848, oldConf=.
+
+2024-07-29 21:00:23,711 WARN RPC server is not started in RaftGroupService.
+
+2024-07-29 21:00:23,711 INFO Start the RaftGroupService successfully.
+
+2024-07-29 21:00:23,734 INFO The channel ad82c51882f0:7848 is in state: READY.
+
+2024-07-29 21:00:23,734 INFO The channel ad82c51882f0:7848 has successfully established.
+
+2024-07-29 21:00:23,735 INFO onLeaderStart: term=1.
+
+2024-07-29 21:00:24,348 ERROR Fail to connect ad82c51882f0:7848, remoting exception: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: CallOptions deadline exceeded after 0.737289541s. Name resolution delay 0.002189458 seconds. [closed=[], open=[[buffered_nanos=296963542, remote_addr=ad82c51882f0/192.168.96.4:7848]]].
+
+2024-07-29 21:00:24,382 ERROR Fail to connect peer ad82c51882f0:7848 to get leader for group naming_persistent_service_v2.
+
+2024-07-29 21:16:14,600 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/snapshot_1.
+
+2024-07-29 21:16:14,601 INFO Renaming /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/temp to /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/snapshot_1.
+
+2024-07-29 21:19:43,391 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_1.
+
+2024-07-29 21:19:43,394 INFO Renaming /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/temp to /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_1.
+
+2024-07-29 21:21:53,060 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_1.
+
+2024-07-29 21:21:53,062 INFO Renaming /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/temp to /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_1.
+
+2024-07-29 21:46:14,548 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 1 to 2, cost 3 ms.
+
+2024-07-29 21:49:43,375 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 1 to 2, cost 2 ms.
+
+2024-07-29 21:51:53,111 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 1 to 2, cost 5 ms.
+
+2024-07-29 22:16:14,685 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 6 ms.
+
+2024-07-29 22:19:43,413 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 4 ms.
+
+2024-07-29 22:21:53,047 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 22:46:14,648 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 22:49:43,425 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 22:51:53,068 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 23:16:14,676 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 3 ms.
+
+2024-07-29 23:19:43,462 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-07-29 23:21:53,086 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 23:46:14,672 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 23:49:43,436 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-07-29 23:51:53,088 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
