@@ -27,6 +27,23 @@ spring:
     host: localhost
     port: 6379
     timeout: 5000
+  mail:
+    live-time: 5
+    protocol: smtp
+    port: 465
+    host: smtp.163.com
+    username: mnzdna@163.com
+    password: xxxxxxxxxxxxxx
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+          starttls:
+            enable: true
+            required: true
 
   # 文件上传
   servlet:

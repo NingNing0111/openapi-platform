@@ -1,8 +1,12 @@
 package me.pgthinker.backend.config;
 
+import lombok.RequiredArgsConstructor;
 import me.pgthinker.exception.GlobalExceptionHandler;
+import me.pgthinker.utils.MailUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -13,6 +17,7 @@ import org.springframework.web.client.RestTemplate;
  * @Description:
  */
 @Configuration
+@RequiredArgsConstructor
 public class AppConfig {
     @Bean
     public RestTemplate restTemplate() {
@@ -23,4 +28,6 @@ public class AppConfig {
     public GlobalExceptionHandler globalExceptionHandler(){
         return new GlobalExceptionHandler();
     }
+
+
 }

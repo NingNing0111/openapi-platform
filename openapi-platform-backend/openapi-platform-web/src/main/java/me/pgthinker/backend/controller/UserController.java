@@ -1,12 +1,15 @@
 package me.pgthinker.backend.controller;
 
+import cn.hutool.core.util.ObjectUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import lombok.RequiredArgsConstructor;
 import me.pgthinker.backend.annotation.AuthCheck;
 import me.pgthinker.common.BaseResponse;
 import me.pgthinker.common.UpdateRequest;
 import me.pgthinker.common.ErrorCode;
 import me.pgthinker.common.ResultUtils;
+import me.pgthinker.constant.CacheConstant;
 import me.pgthinker.constant.UserConstant;
 import me.pgthinker.exception.BusinessException;
 import me.pgthinker.exception.ThrowUtils;
@@ -28,6 +31,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import lombok.extern.slf4j.Slf4j;
 import me.pgthinker.service.UserService;
+import me.pgthinker.utils.RedisUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.util.DigestUtils;
@@ -46,10 +50,12 @@ import static me.pgthinker.backend.service.impl.UserServiceImpl.SALT;
 @RestController
 @RequestMapping("/user")
 @Slf4j
+@RequiredArgsConstructor
 public class UserController {
 
-    @Resource
-    private UserService userService;
+    private final UserService userService;
+    private final RedisUtils redisUtils;
+
 
     /**
      * 初始化一个Root用户
@@ -84,12 +90,21 @@ public class UserController {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
         String userAccount = userRegisterRequest.getUserAccount();
+        String email = userRegisterRequest.getEmail();
+        String verifyCode = userRegisterRequest.getVerifyCode();
         String userPassword = userRegisterRequest.getUserPassword();
         String checkPassword = userRegisterRequest.getCheckPassword();
-        if (StringUtils.isAnyBlank(userAccount, userPassword, checkPassword)) {
-            return null;
+        if (StringUtils.isAnyBlank(userAccount, email, verifyCode,userPassword, checkPassword)) {
+            throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
-        long result = userService.userRegister(userAccount, userPassword, checkPassword);
+        // 验证邮箱验证码
+        String code = (String)redisUtils.get(CacheConstant.VERIFY_CODE + email);
+        if(!ObjectUtil.equal(code,verifyCode)){
+            throw new BusinessException(ErrorCode.PARAMS_ERROR,"验证码不正确");
+        }
+        long result = userService.userRegister(userAccount, email,userPassword, checkPassword);
+        // 移除
+        redisUtils.remove(CacheConstant.VERIFY_CODE+email);
         return ResultUtils.success(result);
     }
 

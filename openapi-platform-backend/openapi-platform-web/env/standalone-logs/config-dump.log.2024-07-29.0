@@ -1,0 +1,60 @@
+2024-07-29 21:00:19,731 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.ApiInfoService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=
+
+2024-07-29 21:00:19,731 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=ca6794ed4463478d60ec0317074833b6,oldMd5=
+
+2024-07-29 21:00:19,731 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=e4ded82964b9c77fce08f8e0f75f155d,oldMd5=
+
+2024-07-29 21:00:19,731 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.InvokeService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=
+
+2024-07-29 21:00:19,731 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.AuthService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=
+
+2024-07-29 21:00:19,731 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=a06fa45f44ae567575907f4800e50885,oldMd5=
+
+2024-07-29 21:00:19,745 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.ApiInfoService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=,lastModifiedTs=1722071174000
+
+2024-07-29 21:00:19,745 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.InvokeService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=,lastModifiedTs=1722071175000
+
+2024-07-29 21:00:19,754 INFO [dump-all-ok] me.pgthinker.service.inner.InvokeService+mapping, 1722071175000, length=20,md5UTF8=c70447c5dd8eaaf46c1cc9807b9162e7
+
+2024-07-29 21:00:19,746 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.AuthService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=,lastModifiedTs=1722071173000
+
+2024-07-29 21:00:19,746 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=ca6794ed4463478d60ec0317074833b6,oldMd5=,lastModifiedTs=1722128813000
+
+2024-07-29 21:00:19,746 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=a06fa45f44ae567575907f4800e50885,oldMd5=,lastModifiedTs=1722128813000
+
+2024-07-29 21:00:19,747 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=e4ded82964b9c77fce08f8e0f75f155d,oldMd5=,lastModifiedTs=1722128813000
+
+2024-07-29 21:00:19,748 INFO [dump-all-ok] me.pgthinker.service.inner.ApiInfoService+mapping, 1722071174000, length=20,md5UTF8=c70447c5dd8eaaf46c1cc9807b9162e7
+
+2024-07-29 21:00:19,756 INFO [dump-all-ok] me.pgthinker.service.inner.AuthService+mapping, 1722071173000, length=20,md5UTF8=c70447c5dd8eaaf46c1cc9807b9162e7
+
+2024-07-29 21:00:19,758 INFO [dump-all-ok] me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, 1722128813000, length=16724,md5UTF8=ca6794ed4463478d60ec0317074833b6
+
+2024-07-29 21:00:19,758 INFO [dump-all-ok] me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, 1722128813000, length=16586,md5UTF8=a06fa45f44ae567575907f4800e50885
+
+2024-07-29 21:00:19,759 INFO [dump-all-ok] me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, 1722128813000, length=16730,md5UTF8=e4ded82964b9c77fce08f8e0f75f155d
+
+2024-07-29 21:00:57,879 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-07-29 21:00:57,946 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-07-29 21:00:57,952 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=a0cffdb91ad880016eadfff378cd9191,oldMd5=e4ded82964b9c77fce08f8e0f75f155d
+
+2024-07-29 21:00:57,954 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=a0cffdb91ad880016eadfff378cd9191,oldMd5=e4ded82964b9c77fce08f8e0f75f155d,lastModifiedTs=1722229258000
+
+2024-07-29 21:00:58,026 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-07-29 21:00:58,058 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-07-29 21:00:58,061 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=105b964ebdfeea3e1e179548382e4e0b,oldMd5=ca6794ed4463478d60ec0317074833b6
+
+2024-07-29 21:00:58,062 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=105b964ebdfeea3e1e179548382e4e0b,oldMd5=ca6794ed4463478d60ec0317074833b6,lastModifiedTs=1722229258000
+
+2024-07-29 21:00:58,458 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-07-29 21:00:58,465 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-07-29 21:00:58,473 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=14a16afac96cf7b1ba0fe539bf783fc3,oldMd5=a06fa45f44ae567575907f4800e50885
+
+2024-07-29 21:00:58,474 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=14a16afac96cf7b1ba0fe539bf783fc3,oldMd5=a06fa45f44ae567575907f4800e50885,lastModifiedTs=1722229258000
+

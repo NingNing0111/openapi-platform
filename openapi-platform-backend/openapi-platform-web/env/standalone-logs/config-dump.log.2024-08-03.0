@@ -1,0 +1,120 @@
+2024-08-03 20:13:01,943 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.AuthService+mapping
+
+2024-08-03 20:13:01,957 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:13:01,960 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.AuthService+mapping
+
+2024-08-03 20:13:01,974 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.AuthService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=
+
+2024-08-03 20:13:02,016 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.AuthService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=,lastModifiedTs=1722658382000
+
+2024-08-03 20:13:02,128 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:13:02,136 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=3d2b6970af6c6e589b7039a9bbd8f949,oldMd5=
+
+2024-08-03 20:13:02,150 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=3d2b6970af6c6e589b7039a9bbd8f949,oldMd5=,lastModifiedTs=1722658382000
+
+2024-08-03 20:13:02,683 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.ApiInfoService+mapping
+
+2024-08-03 20:13:02,688 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:13:02,703 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.ApiInfoService+mapping
+
+2024-08-03 20:13:02,704 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.ApiInfoService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=
+
+2024-08-03 20:13:02,705 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.ApiInfoService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=,lastModifiedTs=1722658383000
+
+2024-08-03 20:13:02,706 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:13:02,708 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=053489a06f458c4eca701d60ffe1510e,oldMd5=
+
+2024-08-03 20:13:02,709 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=053489a06f458c4eca701d60ffe1510e,oldMd5=,lastModifiedTs=1722658383000
+
+2024-08-03 20:13:03,120 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.InvokeService+mapping
+
+2024-08-03 20:13:03,193 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:13:03,212 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:13:03,215 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=b481056f179479ffaaa15d9a69e9f0a4,oldMd5=
+
+2024-08-03 20:13:03,228 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=b481056f179479ffaaa15d9a69e9f0a4,oldMd5=,lastModifiedTs=1722658383000
+
+2024-08-03 20:13:03,229 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.InvokeService+mapping
+
+2024-08-03 20:13:03,231 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.InvokeService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=
+
+2024-08-03 20:13:03,239 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.InvokeService+mapping, newMd5=c70447c5dd8eaaf46c1cc9807b9162e7,oldMd5=,lastModifiedTs=1722658383000
+
+2024-08-03 20:41:13,209 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:13,276 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:13,280 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=ff8206b3b0514c5902218fc5f9bd629c,oldMd5=3d2b6970af6c6e589b7039a9bbd8f949
+
+2024-08-03 20:41:13,283 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=ff8206b3b0514c5902218fc5f9bd629c,oldMd5=3d2b6970af6c6e589b7039a9bbd8f949,lastModifiedTs=1722660073000
+
+2024-08-03 20:41:13,520 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:13,586 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:13,590 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=f5927b2d6844b028880249b66653d0ab,oldMd5=053489a06f458c4eca701d60ffe1510e
+
+2024-08-03 20:41:13,591 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=f5927b2d6844b028880249b66653d0ab,oldMd5=053489a06f458c4eca701d60ffe1510e,lastModifiedTs=1722660073000
+
+2024-08-03 20:41:14,194 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:14,205 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:14,208 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=e2d73a1475d5d123e5586d36fc177b9c,oldMd5=b481056f179479ffaaa15d9a69e9f0a4
+
+2024-08-03 20:41:14,209 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=e2d73a1475d5d123e5586d36fc177b9c,oldMd5=b481056f179479ffaaa15d9a69e9f0a4,lastModifiedTs=1722660074000
+
+2024-08-03 20:41:22,529 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:22,547 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:22,550 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=97cfdb8a6abfa8ace3d04af8e31bf56a,oldMd5=ff8206b3b0514c5902218fc5f9bd629c
+
+2024-08-03 20:41:22,551 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=97cfdb8a6abfa8ace3d04af8e31bf56a,oldMd5=ff8206b3b0514c5902218fc5f9bd629c,lastModifiedTs=1722660083000
+
+2024-08-03 20:41:22,652 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:22,730 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:22,752 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:22,755 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=4bc95d03d80e6e0fa93c4e4d3ce44562,oldMd5=e2d73a1475d5d123e5586d36fc177b9c
+
+2024-08-03 20:41:22,757 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=4bc95d03d80e6e0fa93c4e4d3ce44562,oldMd5=e2d73a1475d5d123e5586d36fc177b9c,lastModifiedTs=1722660083000
+
+2024-08-03 20:41:22,757 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:41:22,760 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=fd516cffda885f009a0935b00ab52529,oldMd5=f5927b2d6844b028880249b66653d0ab
+
+2024-08-03 20:41:22,761 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=fd516cffda885f009a0935b00ab52529,oldMd5=f5927b2d6844b028880249b66653d0ab,lastModifiedTs=1722660083000
+
+2024-08-03 20:42:47,043 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:42:47,061 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:42:47,065 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=cde44f8682bc2dc2478ac4c9759b9a08,oldMd5=97cfdb8a6abfa8ace3d04af8e31bf56a
+
+2024-08-03 20:42:47,067 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.AuthService:::provider:openapi-platform-web+dubbo, newMd5=cde44f8682bc2dc2478ac4c9759b9a08,oldMd5=97cfdb8a6abfa8ace3d04af8e31bf56a,lastModifiedTs=1722660167000
+
+2024-08-03 20:42:47,512 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:42:47,570 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:42:47,574 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=8ed82ead51164a5c0e60a6abc921d0e1,oldMd5=fd516cffda885f009a0935b00ab52529
+
+2024-08-03 20:42:47,574 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.ApiInfoService:::provider:openapi-platform-web+dubbo, newMd5=8ed82ead51164a5c0e60a6abc921d0e1,oldMd5=fd516cffda885f009a0935b00ab52529,lastModifiedTs=1722660167000
+
+2024-08-03 20:42:47,870 INFO [dump] add formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:42:47,879 INFO [dump] process formal task. groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo
+
+2024-08-03 20:42:47,883 INFO [dump] md5 changed, save to disk cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=41f9f060b83fe44f8549a7aa3e619efd,oldMd5=4bc95d03d80e6e0fa93c4e4d3ce44562
+
+2024-08-03 20:42:47,885 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=me.pgthinker.service.inner.InvokeService:::provider:openapi-platform-web+dubbo, newMd5=41f9f060b83fe44f8549a7aa3e619efd,oldMd5=4bc95d03d80e6e0fa93c4e4d3ce44562,lastModifiedTs=1722660168000
+

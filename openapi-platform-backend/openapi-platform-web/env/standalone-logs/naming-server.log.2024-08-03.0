@@ -1,0 +1,152 @@
+2024-08-03 18:43:36,466 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2024-08-03 18:43:36,466 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2024-08-03 18:43:36,467 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2024-08-03 18:43:36,467 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2024-08-03 18:43:37,990 INFO Load instance extension handler []
+
+2024-08-03 20:13:01,187 INFO Client connection 1722687181172_192.168.65.1_19625 connect
+
+2024-08-03 20:13:01,415 INFO Client connection 1722687181396_192.168.65.1_19626 connect
+
+2024-08-03 20:13:01,482 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}, 1722687181396_192.168.65.1_19626
+
+2024-08-03 20:13:02,614 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}, 1722687181396_192.168.65.1_19626
+
+2024-08-03 20:13:02,977 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}, 1722687181396_192.168.65.1_19626
+
+2024-08-03 20:13:03,510 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=0}, 1722687181172_192.168.65.1_19625
+
+2024-08-03 20:13:27,177 INFO Client connection 1722687207138_192.168.65.1_19629 connect
+
+2024-08-03 20:13:27,937 INFO Client connection 1722687207920_192.168.65.1_19630 connect
+
+2024-08-03 20:26:32,556 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-08-03 20:26:32,555 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-08-03 20:26:32,680 INFO Client connection 1722687207920_192.168.65.1_19630 disconnect, remove instances and subscribers
+
+2024-08-03 20:26:32,791 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-08-03 20:26:32,801 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-08-03 20:26:32,808 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-08-03 20:26:32,834 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-08-03 20:26:35,050 INFO Client connection 1722687204537_192.168.65.1_19628 disconnect, remove instances and subscribers
+
+2024-08-03 20:26:35,544 INFO Client connection 1722687208013_192.168.65.1_19631 disconnect, remove instances and subscribers
+
+2024-08-03 20:26:35,546 INFO Client connection 1722687207138_192.168.65.1_19629 disconnect, remove instances and subscribers
+
+2024-08-03 20:26:47,731 INFO Client connection 1722688007702_192.168.65.1_19645 connect
+
+2024-08-03 20:26:48,548 INFO Client connection 1722688008534_192.168.65.1_19646 connect
+
+2024-08-03 20:40:48,778 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, 1722687181396_192.168.65.1_19626
+
+2024-08-03 20:40:48,818 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, 1722687181396_192.168.65.1_19626
+
+2024-08-03 20:40:48,832 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, 1722687181396_192.168.65.1_19626
+
+2024-08-03 20:40:48,997 INFO Client connection 1722687181172_192.168.65.1_19625 disconnect, remove instances and subscribers
+
+2024-08-03 20:41:01,332 INFO Client connection 1722687174769_192.168.65.1_19614 disconnect, remove instances and subscribers
+
+2024-08-03 20:41:12,556 INFO Client connection 1722688872533_192.168.65.1_19672 connect
+
+2024-08-03 20:41:12,821 INFO Client connection 1722688872776_192.168.65.1_19673 connect
+
+2024-08-03 20:41:12,837 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=2}, 1722688872776_192.168.65.1_19673
+
+2024-08-03 20:41:13,403 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=2}, 1722688872776_192.168.65.1_19673
+
+2024-08-03 20:41:13,950 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=2}, 1722688872776_192.168.65.1_19673
+
+2024-08-03 20:41:14,442 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=2}, 1722688872533_192.168.65.1_19672
+
+2024-08-03 20:41:14,502 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=3}, 1722688872776_192.168.65.1_19673
+
+2024-08-03 20:41:14,525 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=3}, 1722688872776_192.168.65.1_19673
+
+2024-08-03 20:41:14,532 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=3}, 1722688872776_192.168.65.1_19673
+
+2024-08-03 20:41:14,581 INFO Client connection 1722688872533_192.168.65.1_19672 disconnect, remove instances and subscribers
+
+2024-08-03 20:41:16,686 INFO Client connection 1722688867918_192.168.65.1_19661 disconnect, remove instances and subscribers
+
+2024-08-03 20:41:22,313 INFO Client connection 1722688882295_192.168.65.1_19686 connect
+
+2024-08-03 20:41:22,390 INFO Client connection 1722688882379_192.168.65.1_19687 connect
+
+2024-08-03 20:41:22,397 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=4}, 1722688882379_192.168.65.1_19687
+
+2024-08-03 20:41:22,594 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=4}, 1722688882379_192.168.65.1_19687
+
+2024-08-03 20:41:22,672 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=4}, 1722688882379_192.168.65.1_19687
+
+2024-08-03 20:41:22,762 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=4}, 1722688882295_192.168.65.1_19686
+
+2024-08-03 20:42:16,040 INFO Client connection 1722688882295_192.168.65.1_19686 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:16,041 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=5}, 1722688882379_192.168.65.1_19687
+
+2024-08-03 20:42:16,070 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=5}, 1722688882379_192.168.65.1_19687
+
+2024-08-03 20:42:16,097 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=5}, 1722688882379_192.168.65.1_19687
+
+2024-08-03 20:42:28,657 INFO Client connection 1722688880280_192.168.65.1_19675 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:29,098 INFO Client connection 1722688882379_192.168.65.1_19687 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:29,102 INFO Client connection 1722688872776_192.168.65.1_19673 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:29,104 INFO Client connection 1722688872909_192.168.65.1_19674 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:29,106 INFO Client connection 1722688882429_192.168.65.1_19688 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:29,107 INFO Client connection 1722687181686_192.168.65.1_19627 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:29,117 INFO Client connection 1722687181396_192.168.65.1_19626 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:46,514 INFO Client connection 1722688966501_192.168.65.1_19700 connect
+
+2024-08-03 20:42:46,743 INFO Client connection 1722688966727_192.168.65.1_19701 connect
+
+2024-08-03 20:42:46,784 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=6}, 1722688966727_192.168.65.1_19701
+
+2024-08-03 20:42:47,426 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=6}, 1722688966727_192.168.65.1_19701
+
+2024-08-03 20:42:47,791 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=6}, 1722688966727_192.168.65.1_19701
+
+2024-08-03 20:42:48,261 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=6}, 1722688966501_192.168.65.1_19700
+
+2024-08-03 20:42:58,784 INFO Client connection 1722688008534_192.168.65.1_19646 disconnect, remove instances and subscribers
+
+2024-08-03 20:42:58,832 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-08-03 20:42:58,833 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-08-03 20:42:58,890 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-08-03 20:42:58,890 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-08-03 20:42:58,926 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-08-03 20:42:58,926 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-08-03 20:43:01,244 INFO Client connection 1722688004505_192.168.65.1_19644 disconnect, remove instances and subscribers
+
+2024-08-03 20:43:01,706 INFO Client connection 1722688008631_192.168.65.1_19647 disconnect, remove instances and subscribers
+
+2024-08-03 20:43:01,708 INFO Client connection 1722688007702_192.168.65.1_19645 disconnect, remove instances and subscribers
+
+2024-08-03 20:43:13,172 INFO Client connection 1722688993146_192.168.65.1_19704 connect
+
+2024-08-03 20:43:13,877 INFO Client connection 1722688993862_192.168.65.1_19705 connect
+

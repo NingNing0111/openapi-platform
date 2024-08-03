@@ -73,26 +73,25 @@ public class AuthFilter implements GlobalFilter, Ordered {
         if(ObjectUtils.anyNull(accessKey,sign,timestamp)){
             return handleNoAuth(requestId,response);
         }
-        log.info("{}-请求发起 id:{} uri:{} method:{}", sdf.format(new Date()),requestId,path,methodValue);
-        log.info("accessKey:{},body:{},sign:{},timestamp:{},currTime - timestamp:{}",accessKey, body,sign,timestamp,currTime-Long.parseLong(timestamp));
+        log.info("\n{}-请求发起 id:{} uri:{} method:{}", sdf.format(new Date()),requestId,path,methodValue);
+        log.info("\naccessKey:{},body:{},sign:{},timestamp:{},currTime - timestamp:{}",accessKey, body,sign,timestamp,currTime-Long.parseLong(timestamp));
         // 如果请求的时间距今超过5分钟 则拒绝
         if((currTime - Long.parseLong(timestamp)) >= FIVE_MINUTES){
             return handleNoAuth(requestId,response);
         }
-        log.info("参数校验通过");
+        log.info("\n参数校验通过");
         InterfaceInfo interfaceInfo = apiInfoService.matchInterfaceInfo(path, methodValue);
         if(ObjectUtils.isEmpty(interfaceInfo)){
             log.error("storeInterfaceInfo:{}", interfaceInfo);
             return handleNoAuth(requestId,response);
         }
-        log.info("接口信息校验通过");
+        log.info("\n接口信息校验通过");
         // 根据accessKey获取secretKey
         User storeUser = authService.authorUser(accessKey);
         if(ObjectUtils.isEmpty(storeUser)){
-            log.error("storeUser:{}", storeUser);
             return handleNoAuth(requestId,response);
         }
-        log.info("用户校验通过");
+        log.info("\n用户校验通过");
 
         final String storeSecretKey = storeUser.getSecretKey();
         Map<String, String> data = new HashMap<>();
@@ -101,11 +100,12 @@ public class AuthFilter implements GlobalFilter, Ordered {
         data.put("timestamp",timestamp);
         String calculateSign = GenKeyUtils.genSign(data, storeSecretKey);
         if(ObjectUtils.notEqual(sign,calculateSign)){
-            log.error("auth data:{} secretKey:{}", data, storeSecretKey);
-            log.error("sign:{} \ncalculateSign:{}", sign,calculateSign);
+            log.error("\n鉴权请求的数据：{}", data);
+            log.error("\nauth data:{} secretKey:{}", data, storeSecretKey);
+            log.error("\nsign:{} \ncalculateSign:{}", sign,calculateSign);
             return handleNoAuth(requestId,response);
         }
-        log.info("鉴权通过");
+        log.info("\n鉴权通过");
         return handleBodyHackerResponse(exchange,chain,interfaceInfo.getId(),storeUser.getId());
     }
 

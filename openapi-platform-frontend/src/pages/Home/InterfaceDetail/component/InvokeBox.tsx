@@ -113,7 +113,7 @@ const InvokeBox = (props: Props) => {
                   {result.statusCodeValue ?? -1}
                 </ProDescriptions.Item>
                 <ProDescriptions.Item key={'body'} label="响应数据" valueType={'jsonCode'}>
-                  {JSON.stringify(result.body) ?? '{}'}
+                  {result.body ?? '{}'}
                 </ProDescriptions.Item>
                 <ProDescriptions.Item key={'响应头'} label="响应头" valueType={'jsonCode'}>
                   {JSON.stringify(result.headers) ?? '{}'}

@@ -2,6 +2,7 @@ package me.pgthinker.utils;
 
 import cn.hutool.crypto.digest.DigestAlgorithm;
 import cn.hutool.crypto.digest.Digester;
+import cn.hutool.json.JSONUtil;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.Map;
@@ -27,7 +28,7 @@ public class GenKeyUtils {
     // 生成签名字符串
     public static String genSign(Map<String,String> data,String secretKey){
         Digester digester = new Digester(DigestAlgorithm.SHA256);
-        String content = data.toString() + "." + secretKey;
+        String content = JSONUtil.toJsonStr(data) + "." + secretKey;
         return digester.digestHex(content);
     }
 
