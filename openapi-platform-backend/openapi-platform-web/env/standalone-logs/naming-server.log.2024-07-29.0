@@ -1,0 +1,92 @@
+2024-07-29 20:52:51,677 INFO Client connection 1722257563660_192.168.65.1_51343 disconnect, remove instances and subscribers
+
+2024-07-29 20:55:13,882 INFO Client connection 1722257709500_192.168.65.1_51345 disconnect, remove instances and subscribers
+
+2024-07-29 20:56:04,976 INFO Client connection 1722257764935_192.168.65.1_51348 connect
+
+2024-07-29 20:56:05,616 INFO Client connection 1722257765579_192.168.65.1_51349 connect
+
+2024-07-29 20:56:05,925 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-29 20:56:06,875 INFO Client connection 1722257765579_192.168.65.1_51349 disconnect, remove instances and subscribers
+
+2024-07-29 20:56:09,055 INFO Client connection 1722257760819_192.168.65.1_51347 disconnect, remove instances and subscribers
+
+2024-07-29 20:56:12,584 INFO Client connection 1722257764935_192.168.65.1_51348 disconnect, remove instances and subscribers
+
+2024-07-29 20:56:12,588 INFO Client connection 1722257765742_192.168.65.1_51350 disconnect, remove instances and subscribers
+
+2024-07-29 20:56:48,682 INFO Client connection 1722257805063_192.168.65.1_51363 disconnect, remove instances and subscribers
+
+2024-07-29 20:57:37,098 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2024-07-29 20:57:37,227 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2024-07-29 21:00:21,459 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2024-07-29 21:00:21,459 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2024-07-29 21:00:21,460 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2024-07-29 21:00:21,460 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2024-07-29 21:00:25,159 INFO Load instance extension handler []
+
+2024-07-29 21:00:57,038 INFO Client connection 1722258057008_192.168.65.1_51417 connect
+
+2024-07-29 21:00:57,216 INFO Client connection 1722258057198_192.168.65.1_51418 connect
+
+2024-07-29 21:00:57,279 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}, 1722258057198_192.168.65.1_51418
+
+2024-07-29 21:00:57,954 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}, 1722258057198_192.168.65.1_51418
+
+2024-07-29 21:00:58,340 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}, 1722258057198_192.168.65.1_51418
+
+2024-07-29 21:00:58,853 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=0}, 1722258057008_192.168.65.1_51417
+
+2024-07-29 21:03:29,717 INFO Client connection 1722258209696_192.168.65.1_51421 connect
+
+2024-07-29 21:03:31,670 INFO Client connection 1722258211624_192.168.65.1_51422 connect
+
+2024-07-29 22:29:25,566 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-29 22:29:25,561 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-29 22:29:25,771 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=0}
+
+2024-07-29 22:29:25,796 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=0}
+
+2024-07-29 22:29:25,817 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-29 22:29:25,873 WARN remove instance from non-exist service: Service{namespace='public', group='DEFAULT_GROUP', name='consumers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=0}
+
+2024-07-29 22:29:25,982 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, 1722258057198_192.168.65.1_51418
+
+2024-07-29 22:29:26,026 INFO Client connection 1722258211624_192.168.65.1_51422 disconnect, remove instances and subscribers
+
+2024-07-29 22:29:26,073 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, 1722258057198_192.168.65.1_51418
+
+2024-07-29 22:29:26,075 INFO Client connection 1722258057008_192.168.65.1_51417 disconnect, remove instances and subscribers
+
+2024-07-29 22:29:26,099 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, 1722258057198_192.168.65.1_51418
+
+2024-07-29 22:29:28,325 INFO Client connection 1722258206520_192.168.65.1_51420 disconnect, remove instances and subscribers
+
+2024-07-29 22:29:28,928 INFO Client connection 1722258209696_192.168.65.1_51421 disconnect, remove instances and subscribers
+
+2024-07-29 22:29:28,935 INFO Client connection 1722258211917_192.168.65.1_51423 disconnect, remove instances and subscribers
+
+2024-07-29 22:29:34,718 INFO Client connection 1722258050063_192.168.65.1_51406 disconnect, remove instances and subscribers
+
+2024-07-29 22:29:35,175 INFO Client connection 1722258057198_192.168.65.1_51418 disconnect, remove instances and subscribers
+
+2024-07-29 22:29:35,178 INFO Client connection 1722258057449_192.168.65.1_51419 disconnect, remove instances and subscribers
+
+2024-07-29 22:30:53,373 WARN namespace : public, [DEFAULT_GROUP@@openapi-platform-web] services are automatically cleaned
+
+2024-07-29 22:30:53,380 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.AuthService::] services are automatically cleaned
+
+2024-07-29 22:30:53,381 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.ApiInfoService::] services are automatically cleaned
+
+2024-07-29 22:30:53,382 WARN namespace : public, [DEFAULT_GROUP@@providers:me.pgthinker.service.inner.InvokeService::] services are automatically cleaned
+

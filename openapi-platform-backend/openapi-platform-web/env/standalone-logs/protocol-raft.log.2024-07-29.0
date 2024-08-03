@@ -1,0 +1,66 @@
+2024-07-29 16:47:10,964 ERROR Fail to refresh raft metadata info for group : naming_persistent_service_v2, error is : {}
+
+java.util.concurrent.TimeoutException: null
+	at com.alipay.sofa.jraft.rpc.impl.FutureImpl.get(FutureImpl.java:214)
+	at com.alipay.sofa.jraft.RouteTable.refreshLeader(RouteTable.java:253)
+	at com.alibaba.nacos.core.distributed.raft.JRaftServer.refreshRouteTable(JRaftServer.java:496)
+	at com.alibaba.nacos.core.distributed.raft.JRaftServer.lambda$createMultiRaftGroup$1(JRaftServer.java:269)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-07-29 16:47:10,964 ERROR Fail to refresh raft metadata info for group : naming_service_metadata, error is : {}
+
+java.util.concurrent.TimeoutException: null
+	at com.alipay.sofa.jraft.rpc.impl.FutureImpl.get(FutureImpl.java:214)
+	at com.alipay.sofa.jraft.RouteTable.refreshLeader(RouteTable.java:253)
+	at com.alibaba.nacos.core.distributed.raft.JRaftServer.refreshRouteTable(JRaftServer.java:496)
+	at com.alibaba.nacos.core.distributed.raft.JRaftServer.lambda$createMultiRaftGroup$1(JRaftServer.java:269)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-07-29 20:57:37,568 INFO shutdown jraft server
+
+2024-07-29 20:57:37,570 INFO ========= The raft protocol is starting to close =========
+
+2024-07-29 20:57:37,815 INFO ========= The raft protocol has been closed =========
+
+2024-07-29 21:00:21,511 INFO Initializes the Raft protocol, raft-config info : {"data":{},"members":["ad82c51882f0:7848"],"selfMember":"ad82c51882f0:7848"}
+
+2024-07-29 21:00:21,734 INFO ========= The raft protocol is starting... =========
+
+2024-07-29 21:00:21,754 INFO ========= The raft protocol start finished... =========
+
+2024-07-29 21:00:21,773 INFO create raft group : naming_persistent_service_v2
+
+2024-07-29 21:00:22,848 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='ad82c51882f0:7848', term=1, raftClusterInfo=[ad82c51882f0:7848]}
+
+2024-07-29 21:00:22,876 INFO create raft group : naming_instance_metadata
+
+2024-07-29 21:00:23,416 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='ad82c51882f0:7848', term=1, raftClusterInfo=[ad82c51882f0:7848]}
+
+2024-07-29 21:00:23,443 INFO create raft group : naming_service_metadata
+
+2024-07-29 21:00:23,736 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='ad82c51882f0:7848', term=1, raftClusterInfo=[ad82c51882f0:7848]}
+
+2024-07-29 21:00:24,490 ERROR Failed to join the cluster, retry...
+
+java.lang.IllegalStateException: Fail to get leader of group naming_persistent_service_v2
+	at com.alipay.sofa.jraft.core.CliServiceImpl.getPeers(CliServiceImpl.java:605)
+	at com.alipay.sofa.jraft.core.CliServiceImpl.getPeers(CliServiceImpl.java:498)
+	at com.alibaba.nacos.core.distributed.raft.JRaftServer.registerSelfToCluster(JRaftServer.java:353)
+	at com.alibaba.nacos.core.distributed.raft.JRaftServer.lambda$createMultiRaftGroup$0(JRaftServer.java:264)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
