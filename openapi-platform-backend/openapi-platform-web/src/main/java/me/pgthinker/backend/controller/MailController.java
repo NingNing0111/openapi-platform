@@ -48,6 +48,7 @@ public class MailController {
         if(!ObjectUtils.isEmpty(storeUser)){
             throw new BusinessException(ErrorCode.PARAMS_ERROR,"用户已注册");
         }
+
         // 判断验证码是否在有效期内
         Object code = redisUtils.get(CacheConstant.VERIFY_CODE + email);
         if(!ObjectUtils.isEmpty(code)){

@@ -5,26 +5,21 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <DefaultFooter
+      copyright="PG Thinker"
       style={{
         background: 'none',
       }}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
-          href: 'https://pro.ant.design',
-          blankTarget: true,
-        },
-        {
           key: 'github',
           title: <GithubOutlined />,
-          href: 'https://github.com/ant-design/ant-design-pro',
+          href: 'https://github.com/ningning0111/openapi-platform',
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
-          href: 'https://ant.design',
+          key: 'PG Thinker',
+          title: "PG Thinker's Blog",
+          href: 'https://pgthinker.me',
           blankTarget: true,
         },
       ]}

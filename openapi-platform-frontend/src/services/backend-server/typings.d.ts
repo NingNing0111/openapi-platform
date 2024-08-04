@@ -59,6 +59,12 @@ declare namespace API {
     message?: string;
   };
 
+  type BaseResponseString_ = {
+    code?: number;
+    data?: string;
+    message?: string;
+  };
+
   type BaseResponseUser_ = {
     code?: number;
     data?: User;
@@ -361,8 +367,10 @@ declare namespace API {
 
   type UserRegisterRequest = {
     checkPassword?: string;
+    email?: string;
     userAccount?: string;
     userPassword?: string;
+    verifyCode?: string;
   };
 
   type UserUpdateMyRequest = {
@@ -385,5 +393,10 @@ declare namespace API {
     userAvatar?: string;
     userName?: string;
     userRole?: string;
+  };
+
+  type VerifyCodeDto = {
+    email?: string;
+    userAccount?: string;
   };
 }

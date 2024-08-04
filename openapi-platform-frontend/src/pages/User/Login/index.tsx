@@ -109,8 +109,8 @@ const Login: React.FC = () => {
             maxWidth: '75vw',
           }}
           logo={<img alt="logo" src="/logo.svg" />}
-          title="Ant Design"
-          subTitle={'Ant Design 是西湖区最具影响力的 Web 设计规范'}
+          title="PG Thinker's OpenAPI Platform"
+          subTitle={'提供免费的API给开发者使用'}
           initialValues={{
             autoLogin: true,
           }}
@@ -129,16 +129,10 @@ const Login: React.FC = () => {
                 key: 'account',
                 label: '账户密码登录',
               },
-              {
-                key: 'mail',
-                label: '邮箱验证码登录',
-              },
             ]}
           />
 
-          {!userLoginState && type === 'account' && (
-            <LoginMessage content={'错误的用户名和密码(admin/ant.design)'} />
-          )}
+          {!userLoginState && type === 'account' && <LoginMessage content={'错误的用户名和密码'} />}
           {type === 'account' && (
             <>
               <ProFormText
@@ -226,6 +220,7 @@ const Login: React.FC = () => {
               />
             </>
           )}
+
           <div
             style={{
               marginBottom: 24,
@@ -234,12 +229,14 @@ const Login: React.FC = () => {
             <ProFormCheckbox noStyle name="autoLogin">
               自动登录
             </ProFormCheckbox>
+
             <a
               style={{
                 float: 'right',
               }}
+              href="/user/register"
             >
-              忘记密码 ?
+              注册账户
             </a>
           </div>
         </LoginForm>

@@ -18,6 +18,7 @@ const InterfaceDetail: React.FC = () => {
   const [invokeResult, setInvokeResult] = useState('');
   const [invokeParam, setInvokeParam] = useState('');
   const [isListShow, setListShow] = useState(false);
+  const [invokeStatus, setInvokeStatus] = useState('');
   // 当前登录用户
   const { initialState, setInitialState } = useModel('@@initialState');
 
@@ -84,6 +85,7 @@ const InterfaceDetail: React.FC = () => {
         setListShow(false);
         setInvokeResult(JSON.stringify(res, null, 4));
       }
+      setInvokeStatus(res.message ?? '');
     } catch (err: any) {
       invoke();
       setListShow(false);
@@ -208,7 +210,7 @@ const InterfaceDetail: React.FC = () => {
             handleInvoke();
           }}
           requestParamDes={apiInfo.requestParam ?? '[{}]'}
-          invokeStatus="ok"
+          invokeStatus={invokeStatus}
         />
       )}
     </PageContainer>

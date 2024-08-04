@@ -33,7 +33,7 @@ spring:
     port: 465
     host: smtp.163.com
     username: mnzdna@163.com
-    password: xxxxxxxxxxxxxx
+    password: xxxxxxxxxxxxx
     default-encoding: UTF-8
     properties:
       mail:

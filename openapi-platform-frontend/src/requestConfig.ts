@@ -1,6 +1,5 @@
 ﻿import type { RequestOptions } from '@@/plugin-request/request';
 import type { RequestConfig } from '@umijs/max';
-import { message } from 'antd';
 
 // 错误处理方案： 错误类型
 enum ErrorShowType {
@@ -56,12 +55,7 @@ export const requestConfig: RequestConfig = {
     (response) => {
       // 拦截响应数据，进行个性化处理
       const { data } = response as unknown as ResponseStructure;
-      if (data.code !== 0) {
-        throw new Error('响应码错误');
-      }
-      if (data?.success === false) {
-        message.error('请求失败！');
-      }
+
       return response;
     },
   ],

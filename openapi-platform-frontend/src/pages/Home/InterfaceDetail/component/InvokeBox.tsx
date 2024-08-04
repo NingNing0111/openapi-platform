@@ -52,13 +52,13 @@ const InvokeBox = (props: Props) => {
         <ProCard
           title="调试"
           extra={[
-            invokeStatus === 'ok' ? (
+            !invokeStatus || invokeStatus === '' ? null : invokeStatus === 'ok' ? (
               <Tag key={'invokeStatus'} color="success">
-                成功
+                {invokeStatus}
               </Tag>
             ) : (
               <Tag key={'invokeStatus'} color="error">
-                失败
+                {invokeStatus}
               </Tag>
             ),
             <Button
