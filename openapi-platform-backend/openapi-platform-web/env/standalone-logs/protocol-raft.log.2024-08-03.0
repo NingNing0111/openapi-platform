@@ -1,0 +1,18 @@
+2024-08-03 18:43:36,538 INFO Initializes the Raft protocol, raft-config info : {"data":{},"members":["002e804dd561:7848"],"selfMember":"002e804dd561:7848"}
+
+2024-08-03 18:43:36,789 INFO ========= The raft protocol is starting... =========
+
+2024-08-03 18:43:36,808 INFO ========= The raft protocol start finished... =========
+
+2024-08-03 18:43:36,822 INFO create raft group : naming_persistent_service_v2
+
+2024-08-03 18:43:37,266 INFO This Raft event changes : RaftEvent{groupId='naming_persistent_service_v2', leader='002e804dd561:7848', term=1, raftClusterInfo=[002e804dd561:7848]}
+
+2024-08-03 18:43:37,270 INFO create raft group : naming_instance_metadata
+
+2024-08-03 18:43:37,446 INFO This Raft event changes : RaftEvent{groupId='naming_instance_metadata', leader='002e804dd561:7848', term=1, raftClusterInfo=[002e804dd561:7848]}
+
+2024-08-03 18:43:37,448 INFO create raft group : naming_service_metadata
+
+2024-08-03 18:43:37,728 INFO This Raft event changes : RaftEvent{groupId='naming_service_metadata', leader='002e804dd561:7848', term=1, raftClusterInfo=[002e804dd561:7848]}
+

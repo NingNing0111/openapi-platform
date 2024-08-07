@@ -1,0 +1,8 @@
+2024-08-04 15:25:51,704 INFO Nacos GrpcSdkServer Rpc server stopping
+
+2024-08-04 15:25:51,705 INFO Nacos GrpcClusterServer Rpc server stopping
+
+2024-08-04 15:25:52,207 INFO Nacos GrpcClusterServer Rpc server stopped successfully...
+
+2024-08-04 15:25:52,208 INFO Nacos GrpcSdkServer Rpc server stopped successfully...
+
