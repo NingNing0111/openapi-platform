@@ -1,0 +1,106 @@
+2024-08-07 22:30:25,943 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-08-07 22:30:26,007 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-08-07 22:30:26,147 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-08-07 22:30:26,148 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-08-07 22:30:26,148 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-08-07 22:30:26,150 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-08-07 22:30:26,152 INFO The number of active nodes increment to 1.
+
+2024-08-07 22:30:26,368 INFO Starts FSMCaller successfully.
+
+2024-08-07 22:30:26,374 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-08-07 22:30:26,380 INFO Node <naming_persistent_service_v2/c8fc6a074219:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=c8fc6a074219:7848, oldConf=.
+
+2024-08-07 22:30:26,381 INFO Node <naming_persistent_service_v2/c8fc6a074219:7848> start vote and grant vote self, term=0.
+
+2024-08-07 22:30:26,398 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=c8fc6a074219:7848, cost time=12 ms
+
+2024-08-07 22:30:26,399 INFO Node <naming_persistent_service_v2/c8fc6a074219:7848> become leader of group, term=1, conf=c8fc6a074219:7848, oldConf=.
+
+2024-08-07 22:30:26,401 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-08-07 22:30:26,402 WARN RPC server is not started in RaftGroupService.
+
+2024-08-07 22:30:26,402 INFO Start the RaftGroupService successfully.
+
+2024-08-07 22:30:26,412 INFO onLeaderStart: term=1.
+
+2024-08-07 22:30:26,416 INFO The number of active nodes increment to 2.
+
+2024-08-07 22:30:26,457 INFO Starts FSMCaller successfully.
+
+2024-08-07 22:30:26,458 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-08-07 22:30:26,460 INFO Node <naming_instance_metadata/c8fc6a074219:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=c8fc6a074219:7848, oldConf=.
+
+2024-08-07 22:30:26,461 INFO Node <naming_instance_metadata/c8fc6a074219:7848> start vote and grant vote self, term=0.
+
+2024-08-07 22:30:26,464 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=c8fc6a074219:7848, cost time=3 ms
+
+2024-08-07 22:30:26,465 INFO Node <naming_instance_metadata/c8fc6a074219:7848> become leader of group, term=1, conf=c8fc6a074219:7848, oldConf=.
+
+2024-08-07 22:30:26,465 WARN RPC server is not started in RaftGroupService.
+
+2024-08-07 22:30:26,466 INFO Start the RaftGroupService successfully.
+
+2024-08-07 22:30:26,468 INFO onLeaderStart: term=1.
+
+2024-08-07 22:30:26,470 INFO The number of active nodes increment to 3.
+
+2024-08-07 22:30:26,513 INFO Starts FSMCaller successfully.
+
+2024-08-07 22:30:26,514 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-08-07 22:30:26,515 INFO Node <naming_service_metadata/c8fc6a074219:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=c8fc6a074219:7848, oldConf=.
+
+2024-08-07 22:30:26,515 INFO Node <naming_service_metadata/c8fc6a074219:7848> start vote and grant vote self, term=0.
+
+2024-08-07 22:30:26,517 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=c8fc6a074219:7848, cost time=2 ms
+
+2024-08-07 22:30:26,517 INFO Node <naming_service_metadata/c8fc6a074219:7848> become leader of group, term=1, conf=c8fc6a074219:7848, oldConf=.
+
+2024-08-07 22:30:26,518 WARN RPC server is not started in RaftGroupService.
+
+2024-08-07 22:30:26,518 INFO Start the RaftGroupService successfully.
+
+2024-08-07 22:30:26,519 INFO onLeaderStart: term=1.
+
+2024-08-07 22:30:26,533 INFO Creating new channel to: c8fc6a074219:7848.
+
+2024-08-07 22:30:26,549 INFO The channel c8fc6a074219:7848 is in state: CONNECTING.
+
+2024-08-07 22:30:26,875 INFO The channel c8fc6a074219:7848 is in state: READY.
+
+2024-08-07 22:30:26,875 INFO The channel c8fc6a074219:7848 has successfully established.
+
+2024-08-07 22:49:16,331 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_1.
+
+2024-08-07 22:49:16,333 INFO Renaming /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/temp to /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_1.
+
+2024-08-07 22:51:28,821 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_1.
+
+2024-08-07 22:51:28,822 INFO Renaming /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/temp to /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_1.
+
+2024-08-07 22:56:37,729 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/snapshot_1.
+
+2024-08-07 22:56:37,731 INFO Renaming /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/temp to /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/snapshot_1.
+
+2024-08-07 23:19:16,189 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 1 to 2, cost 4 ms.
+
+2024-08-07 23:21:28,742 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 1 to 2, cost 3 ms.
+
+2024-08-07 23:26:37,609 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 1 to 2, cost 1 ms.
+
+2024-08-07 23:49:16,136 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-08-07 23:51:28,707 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 0 ms.
+
+2024-08-07 23:56:37,607 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+

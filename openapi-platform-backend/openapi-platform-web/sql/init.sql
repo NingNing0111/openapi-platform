@@ -84,6 +84,19 @@ create table if not exists openapi_platform.`user_interface_info`
     isDelete     tinyint      default 0                 not null comment '是否删除'
 ) comment '用户接口信息表' collate = utf8mb4_unicode_ci;
 
+-- 插入测试数据
+INSERT INTO openapi_platform.user_interface_info (userId, interfaceId, totalNum, leftNum, status, createTime, updateTime, isDelete)
+VALUES
+    (1, 101, 100, 80, 0, '2024-08-01 10:00:00', '2024-08-01 10:00:00', 0),
+    (1, 102, 50, 50, 0, '2024-08-02 11:30:00', '2024-08-02 11:30:00', 0),
+    (2, 101, 200, 150, 0, '2024-08-03 14:00:00', '2024-08-03 14:00:00', 0),
+    (2, 103, 75, 75, 1, '2024-08-04 16:45:00', '2024-08-04 16:45:00', 0),
+    (3, 104, 300, 250, 0, '2024-08-05 09:15:00', '2024-08-05 09:15:00', 1),
+    (3, 105, 20, 10, 0, '2024-08-06 12:00:00', '2024-08-06 12:00:00', 0),
+    (4, 106, 500, 450, 0, '2024-08-07 18:30:00', '2024-08-07 18:30:00', 0),
+    (4, 107, 10, 5, 1, '2024-08-08 20:00:00', '2024-08-08 20:00:00', 0);
+
+
 
 -- 调用信息表
 drop table if exists openapi_platform.`invoke_info`;

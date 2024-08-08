@@ -1,0 +1,2 @@
+2024-08-07 22:30:25,077 WARN [master-db] jdbc:mysql://mysql-server:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+

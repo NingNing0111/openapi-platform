@@ -1,0 +1,94 @@
+2024-08-07 22:37:38,753 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}
+
+2024-08-07 22:37:39,291 INFO [PUSH-SUCC] 21ms, all delay time 561ms, SLA 564ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:37:39,382 INFO [PUSH-SUCC] 11ms, all delay time 602ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:37:39,416 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}
+
+2024-08-07 22:37:39,746 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}
+
+2024-08-07 22:37:39,991 INFO [PUSH-SUCC] 14ms, all delay time 564ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:37:39,999 INFO [PUSH-SUCC] 20ms, all delay time 595ms, SLA 595ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:37:40,289 INFO [PUSH-SUCC] 8ms, all delay time 537ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:37:40,293 INFO [PUSH-SUCC] 8ms, all delay time 552ms, SLA 552ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:37:40,727 INFO [PUSH-SUCC] 40ms, all delay time 614ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:openapi-platform-web', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:38:03,479 INFO [PUSH-SUCC] 17ms, all delay time 581ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2024-08-07 22:38:03,484 INFO [PUSH-SUCC] 22ms, all delay time 571ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:38:03,984 INFO [PUSH-SUCC] 18ms, all delay time 529ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2024-08-07 22:38:04,589 INFO [PUSH-SUCC] 8ms, all delay time 513ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2024-08-07 22:38:04,691 INFO [PUSH-SUCC] 10ms, all delay time 602ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:38:04,992 INFO [PUSH-SUCC] 5ms, all delay time 553ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:38:04,995 INFO [PUSH-SUCC] 6ms, all delay time 562ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2024-08-07 22:38:05,644 INFO [PUSH-SUCC] 44ms, all delay time 550ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:openapi-platform-gateway', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:41:26,684 INFO [PUSH-SUCC] 115ms, all delay time 638ms, SLA 638ms, Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:41:26,686 INFO [PUSH-SUCC] 117ms, all delay time 640ms, SLA 641ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:41:26,687 INFO [PUSH-SUCC] 21ms, all delay time 615ms, SLA 616ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:41:26,692 INFO [PUSH-SUCC] 103ms, all delay time 646ms, SLA 647ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:41:26,700 INFO [PUSH-SUCC] 32ms, all delay time 612ms, SLA 612ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:41:26,707 INFO [PUSH-SUCC] 40ms, all delay time 635ms, SLA 636ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:41:26,710 INFO [PUSH-SUCC] 39ms, all delay time 622ms, SLA 622ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:41:57,170 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=3}
+
+2024-08-07 22:41:57,593 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=3}
+
+2024-08-07 22:41:57,756 INFO [PUSH-SUCC] 24ms, all delay time 620ms, SLA 620ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:41:57,763 INFO [PUSH-SUCC] 32ms, all delay time 627ms, SLA 627ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:41:57,764 INFO [PUSH-SUCC] 27ms, all delay time 575ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:41:58,010 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=3}
+
+2024-08-07 22:41:58,141 INFO [PUSH-SUCC] 5ms, all delay time 542ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:41:58,145 INFO [PUSH-SUCC] 8ms, all delay time 559ms, SLA 559ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:41:58,149 INFO [PUSH-SUCC] 11ms, all delay time 563ms, SLA 563ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:41:58,567 INFO [PUSH-SUCC] 29ms, all delay time 550ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:41:58,576 INFO [PUSH-SUCC] 35ms, all delay time 572ms, SLA 574ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:41:58,587 INFO [PUSH-SUCC] 45ms, all delay time 583ms, SLA 585ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:41:58,969 INFO [PUSH-SUCC] 26ms, all delay time 607ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:openapi-platform-web', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-08-07 22:41:58,979 INFO [PUSH-SUCC] 35ms, all delay time 545ms, SLA 545ms, Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.50.29
+
+2024-08-07 22:52:49,035 INFO [PUSH-SUCC] 165ms, all delay time 761ms, SLA 765ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:52:49,039 INFO [PUSH-SUCC] 218ms, all delay time 765ms, SLA 769ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.AuthService::', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:52:49,049 INFO [PUSH-SUCC] 27ms, all delay time 597ms, SLA 597ms, Service{namespace='public', group='DEFAULT_GROUP', name='openapi-platform-web', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:52:49,049 INFO [PUSH-SUCC] 229ms, all delay time 760ms, SLA 761ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:52:49,055 INFO [PUSH-SUCC] 185ms, all delay time 766ms, SLA 767ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.ApiInfoService::', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:52:49,068 INFO [PUSH-SUCC] 148ms, all delay time 743ms, SLA 743ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 22:52:49,072 INFO [PUSH-SUCC] 149ms, all delay time 747ms, SLA 747ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:me.pgthinker.service.inner.InvokeService::', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.50.29
+
+2024-08-07 23:09:58,872 INFO [PUSH-SUCC] 23ms, all delay time 530ms for subscriber 192.168.50.29, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:openapi-platform-web', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
